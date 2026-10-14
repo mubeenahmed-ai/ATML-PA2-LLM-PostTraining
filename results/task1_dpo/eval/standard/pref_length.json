@@ -1,0 +1,149 @@
+{
+  "data_file": "data/dpo_length_stratified_eval.jsonl",
+  "data_sha": "89e2c56ee2fdaec7",
+  "skipped_rows": [
+    {
+      "row": 6,
+      "prompt_id": "d620fb740ede53790a6b8f62c8ccce6e66a76fcaa5f20d40b7b2d5d2e00de601",
+      "reason": "Prompt alone has 819 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 7,
+      "prompt_id": "12a47c6d3dedbb86cff747adcb090026e4b772396f8d58ab6566768967813b0f",
+      "reason": "Prompt alone has 943 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 20,
+      "prompt_id": "051f3b0ccdf871bda7148581d33714c35a0ba7481286651b563441a15c07c4d7",
+      "reason": "Prompt alone has 1004 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 22,
+      "prompt_id": "7642c1aa1c6e3f01760bfc976384e982cbbc181431258fff645215a30610b31b",
+      "reason": "Prompt alone has 1107 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 57,
+      "prompt_id": "3dea54dc610518a8f1bc4f22ff64724f19f2ba409e188d55812b3d1c77abde40",
+      "reason": "Prompt alone has 884 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 76,
+      "prompt_id": "175ce5926626b171f863baf48b4337e2a17a5fcbf04b571e1e0612c7bd12d365",
+      "reason": "Prompt alone has 1032 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 82,
+      "prompt_id": "c1b62ad99f9cd90a4eaf69eb724e289ec436da787573f2a2e28ddc1df8e55d40",
+      "reason": "Prompt alone has 1050 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 144,
+      "prompt_id": "bcc6aa804c6dc0e303744ef3d1f598a4a6ed395c8ac6ef668c68262fd9adb6f5",
+      "reason": "Prompt alone has 979 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 209,
+      "prompt_id": "fa62f47dce7fdd418f1fe400046cfad33992e25b0dc539b2215ad0fde27d5e95",
+      "reason": "Prompt alone has 1109 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    }
+  ],
+  "overall": {
+    "n": 237,
+    "preference_accuracy": 0.5611814260482788,
+    "dpo_loss_train_beta": 0.6831349747869386,
+    "train_beta": 0.1,
+    "dpo_loss_common_beta": 0.6831349747869386,
+    "common_beta": 0.1,
+    "margin": {
+      "n": 237,
+      "mean": 0.24859959012848415,
+      "std": 1.3737836834910226,
+      "median": 0.130584716796875,
+      "q1": -0.455810546875,
+      "q3": 0.8978424072265625,
+      "iqr": 1.3536529541015625,
+      "min": -3.8455657958984375,
+      "max": 4.88665771484375
+    },
+    "implicit_reward_margin_mean": 0.024859959012848418,
+    "chosen_logratio_mean": -0.6586121916770935,
+    "rejected_logratio_mean": -0.9072117805480957,
+    "frac_chosen_logratio_negative": 0.746835470199585,
+    "corr_margin_vs_length_difference": -0.14034680166301816
+  },
+  "by_stratum": {
+    "length_matched": {
+      "n": 80,
+      "preference_accuracy": 0.6000000238418579,
+      "dpo_loss_train_beta": 0.6855657806337148,
+      "train_beta": 0.1,
+      "dpo_loss_common_beta": 0.6855657806337148,
+      "common_beta": 0.1,
+      "margin": {
+        "n": 80,
+        "mean": 0.18539825975894927,
+        "std": 1.1570961425463404,
+        "median": 0.13016128540039062,
+        "q1": -0.21968412399291992,
+        "q3": 0.6137800216674805,
+        "iqr": 0.8334641456604004,
+        "min": -3.19635009765625,
+        "max": 4.88665771484375
+      },
+      "implicit_reward_margin_mean": 0.018539825975894927,
+      "chosen_logratio_mean": -0.48567995429039,
+      "rejected_logratio_mean": -0.6710782051086426,
+      "frac_chosen_logratio_negative": 0.675000011920929,
+      "corr_margin_vs_length_difference": 0.005955981825630646
+    },
+    "preferred_longer": {
+      "n": 78,
+      "preference_accuracy": 0.41025641560554504,
+      "dpo_loss_train_beta": 0.6988197248534891,
+      "train_beta": 0.1,
+      "dpo_loss_common_beta": 0.6988197248534891,
+      "common_beta": 0.1,
+      "margin": {
+        "n": 78,
+        "mean": -0.06647454775296725,
+        "std": 1.3800087834713484,
+        "median": -0.1539459228515625,
+        "q1": -0.8426361083984375,
+        "q3": 0.7176971435546875,
+        "iqr": 1.560333251953125,
+        "min": -3.253612518310547,
+        "max": 4.2042388916015625
+      },
+      "implicit_reward_margin_mean": -0.006647454775296726,
+      "chosen_logratio_mean": -0.9029102921485901,
+      "rejected_logratio_mean": -0.8364357352256775,
+      "frac_chosen_logratio_negative": 0.7692307829856873,
+      "corr_margin_vs_length_difference": 0.1209435982808839
+    },
+    "rejected_longer": {
+      "n": 79,
+      "preference_accuracy": 0.6708860993385315,
+      "dpo_loss_train_beta": 0.6651871903194322,
+      "train_beta": 0.1,
+      "dpo_loss_common_beta": 0.6651871903194322,
+      "common_beta": 0.1,
+      "margin": {
+        "n": 79,
+        "mean": 0.6236867949932436,
+        "std": 1.492758834620321,
+        "median": 0.5079345703125,
+        "q1": -0.26798248291015625,
+        "q3": 1.3261642456054688,
+        "iqr": 1.594146728515625,
+        "min": -3.8455657958984375,
+        "max": 4.54937744140625
+      },
+      "implicit_reward_margin_mean": 0.06236867949932437,
+      "chosen_logratio_mean": -0.5925277471542358,
+      "rejected_logratio_mean": -1.2162145376205444,
+      "frac_chosen_logratio_negative": 0.797468364238739,
+      "corr_margin_vs_length_difference": 0.027259333392345098
+    }
+  }
+}

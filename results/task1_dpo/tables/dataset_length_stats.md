@@ -1,0 +1,6 @@
+| file               |    n |   frac_preferred_longer |   frac_rejected_longer |   mean_len_diff |   median_len_diff | strata                                                                   |
+|:-------------------|-----:|------------------------:|-----------------------:|----------------:|------------------:|:-------------------------------------------------------------------------|
+| dpo_standard_train | 1500 |                  0.5627 |                 0.4220 |         42.4500 |           18.0000 | null                                                                     |
+| dpo_standard_eval  |  300 |                  0.5333 |                 0.4433 |         30.6467 |            5.0000 | null                                                                     |
+| dpo_length_train   | 1500 |                  0.4913 |                 0.4860 |          5.1633 |            0.0000 | {"rejected_longer": 500, "preferred_longer": 500, "length_matched": 500} |
+| dpo_length_eval    |  246 |                  0.4837 |                 0.5000 |          2.6951 |           -0.5000 | {"rejected_longer": 82, "preferred_longer": 82, "length_matched": 82}    |

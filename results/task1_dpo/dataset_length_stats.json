@@ -1,0 +1,190 @@
+{
+  "dpo_standard_train": {
+    "file": "data/dpo_standard_train.jsonl",
+    "sha": "8a0e52eb0927b261",
+    "n_pairs": 1500,
+    "frac_preferred_longer": 0.5626666666666666,
+    "frac_rejected_longer": 0.422,
+    "frac_equal_length": 0.015333333333333332,
+    "frac_abs_diff_le_16_tokens": 0.14533333333333334,
+    "length_difference_chosen_minus_rejected": {
+      "n": 1500,
+      "mean": 42.45,
+      "std": 201.95892099759712,
+      "median": 18.0,
+      "q1": -62.0,
+      "q3": 137.0,
+      "iqr": 199.0,
+      "min": -906.0,
+      "max": 821.0
+    },
+    "chosen_tokens": {
+      "n": 1500,
+      "mean": 282.11466666666666,
+      "std": 240.28337212029584,
+      "median": 235.5,
+      "q1": 68.0,
+      "q3": 444.0,
+      "iqr": 376.0,
+      "min": 1.0,
+      "max": 1084.0
+    },
+    "rejected_tokens": {
+      "n": 1500,
+      "mean": 239.66466666666668,
+      "std": 217.58078610915564,
+      "median": 175.0,
+      "q1": 61.0,
+      "q3": 372.25,
+      "iqr": 311.25,
+      "min": 0.0,
+      "max": 1065.0
+    },
+    "corr_length_diff_vs_score_diff": 0.04140954529978782,
+    "length_stratum_counts": null,
+    "tokenizer": "Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "dpo_standard_eval": {
+    "file": "data/dpo_standard_eval.jsonl",
+    "sha": "c1f9e7c7e140b467",
+    "n_pairs": 300,
+    "frac_preferred_longer": 0.5333333333333333,
+    "frac_rejected_longer": 0.44333333333333336,
+    "frac_equal_length": 0.023333333333333334,
+    "frac_abs_diff_le_16_tokens": 0.13666666666666666,
+    "length_difference_chosen_minus_rejected": {
+      "n": 300,
+      "mean": 30.64666666666667,
+      "std": 188.4324577294885,
+      "median": 5.0,
+      "q1": -63.25,
+      "q3": 113.25,
+      "iqr": 176.5,
+      "min": -596.0,
+      "max": 718.0
+    },
+    "chosen_tokens": {
+      "n": 300,
+      "mean": 274.4033333333333,
+      "std": 256.63582592078285,
+      "median": 192.5,
+      "q1": 54.0,
+      "q3": 445.0,
+      "iqr": 391.0,
+      "min": 1.0,
+      "max": 1218.0
+    },
+    "rejected_tokens": {
+      "n": 300,
+      "mean": 243.75666666666666,
+      "std": 227.03382710745788,
+      "median": 172.0,
+      "q1": 53.0,
+      "q3": 379.5,
+      "iqr": 326.5,
+      "min": 1.0,
+      "max": 1024.0
+    },
+    "corr_length_diff_vs_score_diff": 0.17994207225240047,
+    "length_stratum_counts": null,
+    "tokenizer": "Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "dpo_length_train": {
+    "file": "data/dpo_length_balanced_train.jsonl",
+    "sha": "15e1126ef1befe35",
+    "n_pairs": 1500,
+    "frac_preferred_longer": 0.49133333333333334,
+    "frac_rejected_longer": 0.486,
+    "frac_equal_length": 0.02266666666666667,
+    "frac_abs_diff_le_16_tokens": 0.3333333333333333,
+    "length_difference_chosen_minus_rejected": {
+      "n": 1500,
+      "mean": 5.163333333333333,
+      "std": 108.29118143015732,
+      "median": 0.0,
+      "q1": -56.25,
+      "q3": 62.0,
+      "iqr": 118.25,
+      "min": -346.0,
+      "max": 361.0
+    },
+    "chosen_tokens": {
+      "n": 1500,
+      "mean": 156.85533333333333,
+      "std": 105.79103096692201,
+      "median": 131.0,
+      "q1": 65.0,
+      "q3": 243.25,
+      "iqr": 178.25,
+      "min": 16.0,
+      "max": 384.0
+    },
+    "rejected_tokens": {
+      "n": 1500,
+      "mean": 151.692,
+      "std": 98.16001593564285,
+      "median": 131.0,
+      "q1": 70.0,
+      "q3": 222.0,
+      "iqr": 152.0,
+      "min": 16.0,
+      "max": 384.0
+    },
+    "corr_length_diff_vs_score_diff": 0.05133840846018386,
+    "length_stratum_counts": {
+      "rejected_longer": 500,
+      "preferred_longer": 500,
+      "length_matched": 500
+    },
+    "tokenizer": "Qwen/Qwen2.5-1.5B-Instruct"
+  },
+  "dpo_length_eval": {
+    "file": "data/dpo_length_stratified_eval.jsonl",
+    "sha": "89e2c56ee2fdaec7",
+    "n_pairs": 246,
+    "frac_preferred_longer": 0.483739837398374,
+    "frac_rejected_longer": 0.5,
+    "frac_equal_length": 0.016260162601626018,
+    "frac_abs_diff_le_16_tokens": 0.3333333333333333,
+    "length_difference_chosen_minus_rejected": {
+      "n": 246,
+      "mean": 2.6951219512195124,
+      "std": 109.3916411787527,
+      "median": -0.5,
+      "q1": -55.75,
+      "q3": 61.25,
+      "iqr": 117.0,
+      "min": -355.0,
+      "max": 297.0
+    },
+    "chosen_tokens": {
+      "n": 246,
+      "mean": 147.45528455284554,
+      "std": 109.19869566631655,
+      "median": 114.5,
+      "q1": 48.25,
+      "q3": 230.0,
+      "iqr": 181.75,
+      "min": 16.0,
+      "max": 384.0
+    },
+    "rejected_tokens": {
+      "n": 246,
+      "mean": 144.760162601626,
+      "std": 104.88961835738142,
+      "median": 113.5,
+      "q1": 53.25,
+      "q3": 234.5,
+      "iqr": 181.25,
+      "min": 16.0,
+      "max": 382.0
+    },
+    "corr_length_diff_vs_score_diff": -0.001542256527379516,
+    "length_stratum_counts": {
+      "rejected_longer": 82,
+      "preferred_longer": 82,
+      "length_matched": 82
+    },
+    "tokenizer": "Qwen/Qwen2.5-1.5B-Instruct"
+  }
+}

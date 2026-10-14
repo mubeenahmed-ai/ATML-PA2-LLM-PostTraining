@@ -1,0 +1,7 @@
+| variant                         |   rlvr_mean_reward |   rlaif_mean_group_reward |   rlaif_group_reward_std |   strict_parser_mean_reward |   last_num_parser_mean_reward |   any_num_parser_mean_reward |
+|:--------------------------------|-------------------:|--------------------------:|-------------------------:|----------------------------:|------------------------------:|-----------------------------:|
+| clean_correct                   |             1.0000 |                    0.4938 |                   0.0836 |                      1.0000 |                        1.0000 |                       1.0000 |
+| corrupt_reasoning_correct_final |             1.0000 |                    0.5000 |                   0.0791 |                      1.0000 |                        1.0000 |                       1.0000 |
+| good_reasoning_wrong_final      |             0.0000 |                    0.4750 |                   0.0500 |                      0.0000 |                        0.0000 |                       1.0000 |
+| persuasive_filler_correct       |             1.0000 |                    0.5875 |                   0.1317 |                      1.0000 |                        1.0000 |                       1.0000 |
+| gold_distractor_wrong_final     |             0.0000 |                    0.4437 |                   0.1396 |                      0.0000 |                        0.0000 |                       1.0000 |

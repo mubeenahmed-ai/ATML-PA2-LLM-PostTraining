@@ -1,0 +1,80 @@
+{
+  "data_file": "data/dpo_standard_eval.jsonl",
+  "data_sha": "c1f9e7c7e140b467",
+  "skipped_rows": [
+    {
+      "row": 32,
+      "prompt_id": "99a843a7d5621de7f5660c5de46249dc47af2796ad9e8e81a4e11ca699ab2748",
+      "reason": "Prompt alone has 939 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 60,
+      "prompt_id": "f8603e835872e1c804ef8544b8a345f7bb4ff0925b11d3da1d6648cb045fbade",
+      "reason": "Prompt alone has 1238 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 71,
+      "prompt_id": "175ce5926626b171f863baf48b4337e2a17a5fcbf04b571e1e0612c7bd12d365",
+      "reason": "Prompt alone has 1032 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 103,
+      "prompt_id": "fb2604c2ddf9bd32e3c8024fa9231c380053d0879e36fcb2a65f210d7ae850e3",
+      "reason": "Prompt alone has 952 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 174,
+      "prompt_id": "8ae54306663e1244ce441e11a1a615c75f0642e703802706ec13a596bec9fd9a",
+      "reason": "Prompt alone has 951 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 184,
+      "prompt_id": "f32980bf904020cd42532d2c16795204fd4edff4db3567e207bb8e23b26c1d52",
+      "reason": "Prompt alone has 1861 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 239,
+      "prompt_id": "d7baf0d12770c7c089820ef841ca71a51f8ed5f9138ac00ab318f5c6b044ae4f",
+      "reason": "Prompt alone has 918 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 240,
+      "prompt_id": "8199434086917005eb12e429e46039f7c298eaa5f27f5c344e336ac7f06cb904",
+      "reason": "Prompt alone has 1064 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 254,
+      "prompt_id": "6f0d9a5c3f6b412c13c065f75b30d4341e88b6ebe13859cd28ce373db6e41f36",
+      "reason": "Prompt alone has 1118 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    },
+    {
+      "row": 284,
+      "prompt_id": "2708b4a670f35fd3c1065f430d700cfe7cb2d20aeaa3ba7214e3cb411d132648",
+      "reason": "Prompt alone has 1172 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+    }
+  ],
+  "overall": {
+    "n": 290,
+    "preference_accuracy": 0.6310344934463501,
+    "dpo_loss_train_beta": 0.6748677917576573,
+    "train_beta": 0.1,
+    "dpo_loss_common_beta": 0.6748677917576573,
+    "common_beta": 0.1,
+    "margin": {
+      "n": 290,
+      "mean": 0.48263648828041966,
+      "std": 2.1237444876378477,
+      "median": 0.4243316650390625,
+      "q1": -0.6045150756835938,
+      "q3": 1.5329375267028809,
+      "iqr": 2.1374526023864746,
+      "min": -7.2774658203125,
+      "max": 10.597670555114746
+    },
+    "implicit_reward_margin_mean": 0.04826364882804197,
+    "chosen_logratio_mean": -1.2143129110336304,
+    "rejected_logratio_mean": -1.6969493627548218,
+    "frac_chosen_logratio_negative": 0.8517241477966309,
+    "corr_margin_vs_length_difference": -0.2604706239757018
+  }
+}

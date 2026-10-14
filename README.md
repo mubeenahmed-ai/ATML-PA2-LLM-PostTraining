@@ -1,3 +1,90 @@
+<!-- PA2_REPRODUCE_START -->
+## Reproducing every result
+All commands run from the repository root after `python -m pip install -r requirements.txt`, `python -m scripts.download_assets` and `python -m scripts.validate_assets`. Every script is resumable; results are written to `results/<task>/` (committed) and adapters / checkpoints to `outputs/<task>/` (ignored). Each task folder's README documents implementation details.
+
+### Task 1 - DPO  ([details](task1_dpo/README.md))
+```bash
+# 0. validate the corrected objective and log-prob plumbing
+python -m task1_dpo.validate --config configs/dpo.yaml
+
+# 1. standard DPO (one epoch, beta = 0.10) + common evaluation; SFT reference row
+python -m task1_dpo.train    --config configs/dpo.yaml --run-name standard
+python -m task1_dpo.evaluate --config configs/dpo.yaml --adapter outputs/task1_dpo/standard --name standard
+python -m task1_dpo.evaluate --config configs/dpo.yaml --adapter none --name sft
+
+# 2. beta in {0.03, 0.10, 0.30}: short forks (first 600 pairs) from the original initialisation
+python -m task1_dpo.ablate_beta --config configs/dpo.yaml
+
+# 3. length-confounding study (dataset statistics, length-balanced model, stratified eval)
+python -m task1_dpo.analyze_length --config configs/dpo.yaml
+
+# 4. tables / figures / qualitative candidates from the saved results
+python -m task1_dpo.summarize --config configs/dpo.yaml
+```
+
+### Task 2 - PPO  ([details](task2_ppo/README.md))
+```bash
+python -m task2_ppo.validate --config configs/ppo.yaml                       # objective + plumbing checks
+
+# Step 1: 20-update continuation from the supplied midpoint + held-out evaluation
+python -m task2_ppo.continue_train --config configs/ppo.yaml --run-name standard
+python -m task2_ppo.evaluate --config configs/ppo.yaml --adapter midpoint --name midpoint
+python -m task2_ppo.evaluate --config configs/ppo.yaml --adapter outputs/task2_ppo/standard --name standard
+
+# Step 2: cached-rollout clipping geometry + matched eps forks (8 updates each) + evaluation
+python -m task2_ppo.analyze_clipping --config configs/ppo.yaml
+
+# Step 3: KL-pressure forks (8 updates each) + evaluation
+python -m task2_ppo.ablate_kl --config configs/ppo.yaml
+
+python -m task2_ppo.summarize --config configs/ppo.yaml                      # tables / figures / qualitative
+```
+
+### Task 3 - GRPO  ([details](task3_grpo/README.md))
+```bash
+python -m task3_grpo.validate --config configs/grpo.yaml                      # objective + plumbing checks
+
+# Step 1: 20-update continuation from the supplied midpoint (K = 4) + held-out evaluation
+python -m task3_grpo.continue_train --config configs/grpo.yaml --run-name standard
+python -m task3_grpo.evaluate --config configs/grpo.yaml --adapter midpoint --name midpoint
+python -m task3_grpo.evaluate --config configs/grpo.yaml --adapter outputs/task3_grpo/standard --name standard
+
+# Step 2: equal-generation group-size study on the supplied K=8 cache (no training)
+python -m task3_grpo.analyze_group_size --config configs/grpo.yaml
+
+# Step 3: canonical GRPO vs Dr. GRPO-style normalisation (8-update forks) + evaluation
+python -m task3_grpo.compare_normalization --config configs/grpo.yaml
+
+python -m task3_grpo.summarize --config configs/grpo.yaml                     # tables / figures / qualitative
+```
+
+### Task 4 - Safety calibration  ([details](task4_safety/README.md))
+```bash
+python -m task4_safety.validate --config configs/feedback.yaml             # parser, statistics, audit ids, pairing, policy provenance
+python -m task4_safety.generate_responses --config configs/feedback.yaml   # Step 1: greedy responses, 4 fixed policies x 450 prompts
+python -m task4_safety.judge_responses --config configs/feedback.yaml      # Step 2: fixed AI judge (released prompt + parser)
+python -m task4_safety.make_audit_sheet --config configs/feedback.yaml     # Step 3: blind audit sheet for the fixed 60 ids
+#   ... label manual_audit/audit_sheet.csv (manual_label column) or with the notebook labeller ...
+python -m task4_safety.evaluate_safety --config configs/feedback.yaml \
+       --task-results "task1=results/task1_dpo,task2=results/task2_ppo,task3=results/task3_grpo"
+```
+
+### Task 5 - RLVR vs RLAIF  ([details](task5_feedback/README.md))
+```bash
+python -m task5_feedback.validate --config configs/feedback.yaml                        # verifier, data, conventions, adapters
+python -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset gsm      # Step 1: in-domain (generate + judge + metrics)
+python -m task5_feedback.score_perturbations --config configs/feedback.yaml             # Step 2: controlled reward diagnostics
+python -m task5_feedback.evaluate_math --config configs/feedback.yaml --dataset transfer # Step 3: SVAMP transfer
+python -m task5_feedback.compare_feedback --config configs/feedback.yaml                # tables / figures / qualitative
+```
+
+### Task 6 - Synthesis
+No new runs; `results/task6_synthesis/` holds the compact cross-task summary built from the files above.
+
+<!-- PA2_REPRODUCE_END -->
+
+---
+
 # ATML PA2 - LLM Post-Training
 
 <!-- FINAL_STUDENT_SETUP -->

@@ -46,16 +46,23 @@ def shaped_rewards(task_reward, policy_logp, ref_logp, response_mask, beta_kl):
 def ppo_policy_loss(new_logp, old_logp, advantage, mask, eps=0.2):
     """Return PPO clipped policy loss and diagnostics.
 
-    Validate this starter implementation against the clipped surrogate in the assignment manual.
+    L_clip = E_t[ min( rho_t A_t, clip(rho_t, 1-eps, 1+eps) A_t ) ]  (maximised),
+    so the loss is its negative.
+
+    Correction of the released starter: the starter used torch.maximum, i.e. the
+    OPTIMISTIC bound. That removes the pessimistic clipping: for A > 0 the objective
+    keeps growing with rho beyond 1+eps, and for A < 0 it keeps rewarding pushing rho
+    below 1-eps, so nothing limits the size of a single policy update. The clipped
+    surrogate is the elementwise MINIMUM (a lower bound on the unclipped objective).
     """
     ratio = torch.exp(new_logp - old_logp)
     surr1 = ratio * advantage
     surr2 = ratio.clamp(1.0 - eps, 1.0 + eps) * advantage
 
-    # Starter implementation: students must validate the clipping geometry carefully.
-    objective = torch.maximum(surr1, surr2)
+    objective = torch.minimum(surr1, surr2)
 
     loss = -masked_mean(objective, mask)
+    # manual's clip fraction: ratio outside [1-eps, 1+eps] BEFORE clipping
     affected = ((ratio < (1.0 - eps)) | (ratio > (1.0 + eps))).float()
     clip_fraction = masked_mean(affected, mask)
     return loss, ratio.detach(), clip_fraction.detach()
@@ -72,3 +79,11 @@ def normalize_advantages(advantages, mask, eps=1e-6):
     mean = valid.mean()
     std = valid.std(unbiased=False).clamp_min(eps)
     return ((advantages - mean) / std) * mask
+
+
+def clip_binding_fraction(ratio, advantage, mask, eps):
+    """Fraction of valid tokens where the clip actually BINDS (the min selects the clipped
+    term, so the token contributes no policy gradient): (A>0 and rho>1+eps) or (A<0 and rho<1-eps).
+    Reported alongside the manual's clip fraction ('affected-token fraction')."""
+    binds = ((advantage > 0) & (ratio > 1.0 + eps)) | ((advantage < 0) & (ratio < 1.0 - eps))
+    return masked_mean(binds.float(), mask)

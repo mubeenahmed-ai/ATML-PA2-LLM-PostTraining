@@ -1,0 +1,97 @@
+[
+  {
+    "row": 2,
+    "prompt_id": "e14d5ba9f8d00a203e7cc3e044f3d3bc4ad429024898c59e0c6a1009e7fb1f18",
+    "reason": "Prompt alone has 999 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 9,
+    "prompt_id": "6f58a8714956c4ece492f013f93cf719484852f1e355ede1b79f028807938111",
+    "reason": "Prompt alone has 1072 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 26,
+    "prompt_id": "fabe7f39d9890f3d945db8c8e1f787db76cfd9b4cbdfcbb796e5a1f9c601a0af",
+    "reason": "Prompt alone has 813 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 74,
+    "prompt_id": "aa966c9d7b809f8f8e3c764ef0ad940564dc584114e6704032ee4f14c18ef6e7",
+    "reason": "Prompt alone has 1374 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 92,
+    "prompt_id": "f3d1abc1c0e79f0f3546b36f4c3fa8120c325521cbc9df0ce8b41a6928c0c72d",
+    "reason": "Prompt alone has 1032 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 158,
+    "prompt_id": "948459d65639035efa182add73e52307c4df90a887e9a9026a8aeef3794f2d07",
+    "reason": "Prompt alone has 895 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 199,
+    "prompt_id": "74369a60a79703e9e0dced866e6683d01c3338103e40a00d6d9eb0cc49a40121",
+    "reason": "Prompt alone has 1095 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 228,
+    "prompt_id": "8f1ec2cf1f76779c7ab4962998cf8792b50c6e93fe09b15eea7195ea13c0c803",
+    "reason": "Prompt alone has 1101 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 265,
+    "prompt_id": "f5d6669a7c077c4c7f49833ed50befc3490747825303722b7c809b71c6fb4652",
+    "reason": "Prompt alone has 1867 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 271,
+    "prompt_id": "e1dca4044ab27e45f64b5b58c6bfd84642f2dfe0c4f295fa9e7be195c437161d",
+    "reason": "Prompt alone has 3563 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 315,
+    "prompt_id": "e5774276d496b7f1cbed667c35a2af85f515fc702d2147dad7d84c448c41ec12",
+    "reason": "Prompt alone has 822 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 325,
+    "prompt_id": "0fa6c81ef0c6275141c14569d677fc68111afc00b606873124271ac601d32f8b",
+    "reason": "Prompt alone has 1222 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 434,
+    "prompt_id": "18732a153d984c2e5a027e18fa1cbeb61b99a9fe6e8aa2ff0e940d2e5ea86a72",
+    "reason": "Prompt alone has 834 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 437,
+    "prompt_id": "86a6ee192999e46ac0f041385e97cb8176b28e70e0e5b4a47b01d26fee682df8",
+    "reason": "Prompt alone has 775 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 486,
+    "prompt_id": "d348ab35c2625f30ab9f5a2b850efe786e499adf6aa0db34016962a1462a79f2",
+    "reason": "Prompt alone has 1090 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 507,
+    "prompt_id": "85e0488323a28fca22a662a56ac4fa0056aaf6ed89051187ecaa9717e48b7cc6",
+    "reason": "Prompt alone has 870 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 514,
+    "prompt_id": "2c0f592d7c48443fa4ca815c2a110177e107f37b7449112f980aa30c3a03b21c",
+    "reason": "Prompt alone has 814 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 521,
+    "prompt_id": "82eeff0265dffcb6fb802f377911c568bc153001573dbcb7b8cffd867d947958",
+    "reason": "Prompt alone has 1163 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  },
+  {
+    "row": 554,
+    "prompt_id": "c45d3fc36d3c0ec001b926e5bf9a284f0befc9dc25cda0316cbc8771fa1d578b",
+    "reason": "Prompt alone has 1165 tokens, which does not fit inside max_length=768. Increase max_length or filter this example."
+  }
+]

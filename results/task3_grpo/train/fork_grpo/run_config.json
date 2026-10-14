@@ -1,0 +1,39 @@
+{
+  "run_name": "fork_grpo",
+  "updates": 8,
+  "prompts_per_update": 1,
+  "num_generations": 4,
+  "policy_epochs": 1,
+  "loss_type": "grpo",
+  "clip_epsilon": 0.2,
+  "kl_beta": 0.1,
+  "learning_rate": 5e-06,
+  "max_prompt_length": 256,
+  "max_completion_length": 512,
+  "mask_truncated_completions": true,
+  "max_grad_norm": 1.0,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "seed": 6304,
+  "start_policy": "checkpoints/grpo_midpoint_policy",
+  "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+  "reference": "Qwen/Qwen2.5-1.5B-Instruct (adapter disabled)",
+  "dtype": "float16",
+  "advantage": "within-group (r - mean) / std(population), std clamped at 1e-6",
+  "kl_estimator_in_loss": "k3: exp(ref - new) - (ref - new) - 1, mean over valid tokens",
+  "prompt_rows": [
+    696,
+    607,
+    213,
+    929,
+    944,
+    255,
+    600,
+    279
+  ],
+  "dropout": "disabled",
+  "old_logprobs": "new.detach() when policy_epochs == 1 (ratio = 1), else a no-grad pass"
+}

@@ -1,0 +1,49 @@
+{
+  "run_meta": {
+    "run_name": "beta_0.10",
+    "data_file": "data/dpo_standard_train.jsonl",
+    "data_sha": "8a0e52eb0927b261",
+    "rows_in_file": 1500,
+    "rows_selected": 600,
+    "pairs_used": 581,
+    "rows_skipped": 19,
+    "beta": 0.1,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0,
+    "batch_size": 2,
+    "grad_accum_steps": 8,
+    "effective_batch": 16,
+    "epochs": 1,
+    "max_sequence_length": 768,
+    "max_grad_norm": 1.0,
+    "seed": 6304,
+    "base_model": "Qwen/Qwen2.5-1.5B-Instruct",
+    "dtype": "float16",
+    "lora": {
+      "r": 8,
+      "alpha": 16,
+      "dropout": 0.05,
+      "target_modules": [
+        "q_proj",
+        "v_proj"
+      ]
+    },
+    "lr_schedule": "constant (no warmup), as in the released starter"
+  },
+  "adapter_dir": "/content/drive/MyDrive/ATML_PA2/task1_dpo/outputs/beta_0.10",
+  "opt_steps": 37,
+  "micro_steps": 291,
+  "pairs_seen": 581,
+  "wall_clock_s": 502.72221422195435,
+  "wall_clock_min": 8.378703570365905,
+  "peak_vram_gb": 8.126639366149902,
+  "gpu": "Tesla T4",
+  "skipped_nonfinite_steps": 0,
+  "final_window_last10_steps": {
+    "loss": 0.6884774504601955,
+    "preference_accuracy": 0.6224999999999999,
+    "margin_mean": 0.09913690492510796,
+    "chosen_logratio_mean": -0.16161272276192903,
+    "rejected_logratio_mean": -0.260749627687037
+  }
+}

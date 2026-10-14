@@ -1,0 +1,35 @@
+{
+  "critic": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/standard/value_trainable.pt",
+  "kl_beta_used_for_returns": 0.1,
+  "n_responses": 64,
+  "n_tokens": 19960,
+  "token_explained_variance": -2.644587602815902,
+  "token_corr": -0.1139123044800484,
+  "token_mse": 19.574276883334786,
+  "first_token_explained_variance": -1.423791499450517,
+  "first_token_corr": -0.028900259642726685,
+  "value_std": 1.9757744073867798,
+  "return_std": 1.3030309549056673,
+  "first_token_value": {
+    "n": 64,
+    "mean": -0.13657786278054118,
+    "std": 1.5160522498777407,
+    "median": -0.30398404598236084,
+    "q1": -1.1499237418174744,
+    "q3": 0.9560891836881638,
+    "iqr": 2.106012925505638,
+    "min": -3.143125295639038,
+    "max": 3.183549404144287
+  },
+  "first_token_return": {
+    "n": 64,
+    "mean": 1.5943974654693602,
+    "std": 1.3016932787072824,
+    "median": 1.8698429687499996,
+    "q1": 0.6446935781249997,
+    "q3": 2.5922625625000006,
+    "iqr": 1.947568984375001,
+    "min": -1.28523125,
+    "max": 3.93284325
+  }
+}

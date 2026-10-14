@@ -1,0 +1,13 @@
+pair,mechanism,n,better_rate,tie_rate,explicit_ties,ambiguous_outputs,wrong_preference_rate,better_ci_lo,better_ci_hi
+reasoning,rlvr,20,0.0,1.0,,,0.0,0.0,0.16113012549493322
+reasoning,rlaif_pairwise,20,0.0,1.0,20.0,0.0,0.0,0.0,0.16113012549493322
+reasoning,rlaif_group_reward,20,0.1,0.75,,,0.15,0.027865893984153206,0.30103820641179335
+outcome,rlvr,20,1.0,0.0,,,0.0,0.8388698745050667,1.0
+outcome,rlaif_pairwise,20,0.0,1.0,20.0,0.0,0.0,0.0,0.16113012549493322
+outcome,rlaif_group_reward,20,0.3,0.55,,,0.15,0.14547527396899385,0.5189767762289793
+filler,rlvr,20,0.0,1.0,,,0.0,0.0,0.16113012549493322
+filler,rlaif_pairwise,20,0.0,0.75,15.0,0.0,0.25,0.0,0.16113012549493322
+filler,rlaif_group_reward,20,0.1,0.5,,,0.4,0.027865893984153206,0.30103820641179335
+distractor,rlvr,20,1.0,0.0,,,0.0,0.8388698745050667,1.0
+distractor,rlaif_pairwise,20,0.25,0.7,14.0,0.0,0.05,0.11186005278940309,0.4687050099580636
+distractor,rlaif_group_reward,20,0.4,0.5,,,0.1,0.21880396741419272,0.613422057684794

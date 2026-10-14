@@ -1,0 +1,5 @@
+file,n,frac_preferred_longer,frac_rejected_longer,mean_len_diff,median_len_diff,strata
+dpo_standard_train,1500,0.5626666666666666,0.422,42.45,18.0,null
+dpo_standard_eval,300,0.5333333333333333,0.44333333333333336,30.64666666666667,5.0,null
+dpo_length_train,1500,0.49133333333333334,0.486,5.163333333333333,0.0,"{""rejected_longer"": 500, ""preferred_longer"": 500, ""length_matched"": 500}"
+dpo_length_eval,246,0.483739837398374,0.5,2.6951219512195124,-0.5,"{""rejected_longer"": 82, ""preferred_longer"": 82, ""length_matched"": 82}"

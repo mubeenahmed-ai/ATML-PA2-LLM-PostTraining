@@ -1,0 +1,14 @@
+{
+  "mode": "all_policies",
+  "n_ids": 60,
+  "n_items": 240,
+  "policies": [
+    "sft",
+    "dpo",
+    "ppo",
+    "grpo"
+  ],
+  "seed": 6304,
+  "id_rule": "released fixed_audit_ids (30 SAFE + 30 UNSAFE)",
+  "blinding": "sheet shows prompt + response only, shuffled; key kept separately"
+}

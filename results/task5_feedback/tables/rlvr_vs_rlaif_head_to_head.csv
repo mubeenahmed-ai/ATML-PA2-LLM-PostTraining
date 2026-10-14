@@ -1,0 +1,3 @@
+dataset,n,ai_pairwise_win_rate,wins,losses,judge_ties,identical_responses,judge_explicit_ties,judge_ambiguous_outputs,verifier_judge_agreement,n_verifier_decisive,judge_picks_verifier_correct_when_decisive,judge_tie_when_verifier_decisive,judge_opposes_verifier_when_decisive,n_verifier_tie_nonidentical,judge_decisive_when_verifier_ties
+gsm,300,0.5,2,2,296,238,58,0,0.95,11,0.0,1.0,0.0,51,0.0784313725490196
+transfer,100,0.51,3,1,96,87,9,0,0.96,2,0.5,0.5,0.0,11,0.2727272727272727

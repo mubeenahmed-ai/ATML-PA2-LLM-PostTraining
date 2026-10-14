@@ -1,0 +1,96 @@
+{
+  "fork_grpo": {
+    "n_completions_in_loss": 23,
+    "median_length": 105.0,
+    "note": "corr_length_vs_per_token_weight is DEFINITIONAL (|A|/T_k for grpo, |A|/L for dr_grpo); the empirical length-conditioned evidence is the measured per-completion gradient norm and the generated lengths. Completions that hit the cap are excluded (masked), which narrows the length range.",
+    "all": {
+      "n": 23,
+      "corr_length_vs_per_token_weight": -0.4608877371053001,
+      "corr_length_vs_seq_grad_norm": -0.47556669232435156,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        -0.6508855757003363,
+        -0.34503041653187544
+      ],
+      "mean_per_token_weight_short": 0.016482131507272,
+      "mean_per_token_weight_long": 0.0009708733205195728,
+      "share_of_seq_grad_norm_on_long": 0.17432112261066438,
+      "mean_seq_grad_norm_short": 0.44148871675133705,
+      "mean_seq_grad_norm_long": 0.10168268582360311
+    },
+    "positive_adv": {
+      "n": 11,
+      "corr_length_vs_per_token_weight": -0.7887854337002937,
+      "corr_length_vs_seq_grad_norm": -0.6740763241215536,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        -0.9297163340476851,
+        -0.40366224767590586
+      ],
+      "mean_per_token_weight_short": 0.0048505894071052946,
+      "mean_per_token_weight_long": 0.0011657756698146122,
+      "share_of_seq_grad_norm_on_long": 0.5553595010355157,
+      "mean_seq_grad_norm_short": 0.25328340629736584,
+      "mean_seq_grad_norm_long": 0.1186323668807745
+    },
+    "negative_adv": {
+      "n": 12,
+      "corr_length_vs_per_token_weight": -0.45689622588470863,
+      "corr_length_vs_seq_grad_norm": -0.439476863159849,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        -0.7033346105874189,
+        -0.24282474519616035
+      ],
+      "mean_per_token_weight_short": 0.020359312207327566,
+      "mean_per_token_weight_long": 0.0004511337223994673,
+      "share_of_seq_grad_norm_on_long": 0.0359961485284454,
+      "mean_seq_grad_norm_short": 0.5042238202359941,
+      "mean_seq_grad_norm_long": 0.056483536337812744
+    }
+  },
+  "fork_dr_grpo": {
+    "n_completions_in_loss": 23,
+    "median_length": 105.0,
+    "note": "corr_length_vs_per_token_weight is DEFINITIONAL (|A|/T_k for grpo, |A|/L for dr_grpo); the empirical length-conditioned evidence is the measured per-completion gradient norm and the generated lengths. Completions that hit the cap are excluded (masked), which narrows the length range.",
+    "all": {
+      "n": 23,
+      "corr_length_vs_per_token_weight": 0.19617192114009632,
+      "corr_length_vs_seq_grad_norm": 0.7287118451635732,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        0.5046668372465692,
+        0.8862764780283212
+      ],
+      "mean_per_token_weight_short": 0.0004311118706633958,
+      "mean_per_token_weight_long": 0.00047832052752544934,
+      "share_of_seq_grad_norm_on_long": 0.7134696662843032,
+      "mean_seq_grad_norm_short": 0.020160006553245086,
+      "mean_seq_grad_norm_long": 0.054762609895657406
+    },
+    "positive_adv": {
+      "n": 11,
+      "corr_length_vs_per_token_weight": 0.16280303349609435,
+      "corr_length_vs_seq_grad_norm": 0.6392423846676086,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        0.22881172897545982,
+        0.9031637510054981
+      ],
+      "mean_per_token_weight_short": 0.00047345626323173445,
+      "mean_per_token_weight_long": 0.0005209981318330392,
+      "share_of_seq_grad_norm_on_long": 0.8388196392395505,
+      "mean_seq_grad_norm_short": 0.029784154146909714,
+      "mean_seq_grad_norm_long": 0.058126343647018075
+    },
+    "negative_adv": {
+      "n": 12,
+      "corr_length_vs_per_token_weight": -0.018215011239784532,
+      "corr_length_vs_seq_grad_norm": 0.7259290925093597,
+      "corr_length_vs_seq_grad_norm_ci95": [
+        0.04696182744093723,
+        0.9619417908424439
+      ],
+      "mean_per_token_weight_short": 0.00041699707314061624,
+      "mean_per_token_weight_long": 0.00036451358270520967,
+      "share_of_seq_grad_norm_on_long": 0.47380602122256515,
+      "mean_seq_grad_norm_short": 0.01695195735535688,
+      "mean_seq_grad_norm_long": 0.0457926532253623
+    }
+  }
+}

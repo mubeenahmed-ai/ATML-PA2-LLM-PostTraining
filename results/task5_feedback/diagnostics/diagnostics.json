@@ -1,0 +1,251 @@
+{
+  "n_problems": 20,
+  "rlvr_expected_reward_mismatches": [],
+  "pairs": {
+    "reasoning": {
+      "rlvr": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.0,
+          0.16113012549493322
+        ]
+      },
+      "rlaif_pairwise": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.0,
+          0.16113012549493322
+        ],
+        "explicit_ties": 20,
+        "ambiguous_outputs": 0
+      },
+      "rlaif_group_reward": {
+        "n": 20,
+        "better_rate": 0.1,
+        "tie_rate": 0.75,
+        "wrong_preference_rate": 0.15,
+        "better_rate_ci95": [
+          0.027865893984153206,
+          0.30103820641179335
+        ]
+      }
+    },
+    "outcome": {
+      "rlvr": {
+        "n": 20,
+        "better_rate": 1.0,
+        "tie_rate": 0.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "rlaif_pairwise": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.0,
+          0.16113012549493322
+        ],
+        "explicit_ties": 20,
+        "ambiguous_outputs": 0
+      },
+      "rlaif_group_reward": {
+        "n": 20,
+        "better_rate": 0.3,
+        "tie_rate": 0.55,
+        "wrong_preference_rate": 0.15,
+        "better_rate_ci95": [
+          0.14547527396899385,
+          0.5189767762289793
+        ]
+      }
+    },
+    "filler": {
+      "rlvr": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 1.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.0,
+          0.16113012549493322
+        ]
+      },
+      "rlaif_pairwise": {
+        "n": 20,
+        "better_rate": 0.0,
+        "tie_rate": 0.75,
+        "wrong_preference_rate": 0.25,
+        "better_rate_ci95": [
+          0.0,
+          0.16113012549493322
+        ],
+        "explicit_ties": 15,
+        "ambiguous_outputs": 0
+      },
+      "rlaif_group_reward": {
+        "n": 20,
+        "better_rate": 0.1,
+        "tie_rate": 0.5,
+        "wrong_preference_rate": 0.4,
+        "better_rate_ci95": [
+          0.027865893984153206,
+          0.30103820641179335
+        ]
+      }
+    },
+    "distractor": {
+      "rlvr": {
+        "n": 20,
+        "better_rate": 1.0,
+        "tie_rate": 0.0,
+        "wrong_preference_rate": 0.0,
+        "better_rate_ci95": [
+          0.8388698745050667,
+          1.0
+        ]
+      },
+      "rlaif_pairwise": {
+        "n": 20,
+        "better_rate": 0.25,
+        "tie_rate": 0.7,
+        "wrong_preference_rate": 0.05,
+        "better_rate_ci95": [
+          0.11186005278940309,
+          0.4687050099580636
+        ],
+        "explicit_ties": 14,
+        "ambiguous_outputs": 0
+      },
+      "rlaif_group_reward": {
+        "n": 20,
+        "better_rate": 0.4,
+        "tie_rate": 0.5,
+        "wrong_preference_rate": 0.1,
+        "better_rate_ci95": [
+          0.21880396741419272,
+          0.613422057684794
+        ]
+      }
+    }
+  },
+  "summary": {
+    "S_reason": {
+      "rlvr": 0.0,
+      "rlaif_pairwise": 0.0,
+      "rlaif_group_reward": 0.1
+    },
+    "S_outcome": {
+      "rlvr": 1.0,
+      "rlaif_pairwise": 0.0,
+      "rlaif_group_reward": 0.3
+    },
+    "definitions": {
+      "S_reason": "Pr[R(clean_correct) > R(corrupt_reasoning_correct_final)] (same correct final)",
+      "S_outcome": "Pr[R(clean_correct) > R(good_reasoning_wrong_final)] (same reasoning, final changed)",
+      "filler_pair": "clean_correct counted as the better response (the filler adds only an unsupported persuasive claim); a tie is neutral; preferring the filler = style susceptibility"
+    }
+  },
+  "per_variant": {
+    "clean_correct": {
+      "rlvr_mean_reward": 1.0,
+      "rlaif_mean_group_reward": 0.49375,
+      "rlaif_group_reward_std": 0.08361930100162282,
+      "strict_parser_mean_reward": 1.0,
+      "last_num_parser_mean_reward": 1.0,
+      "any_num_parser_mean_reward": 1.0
+    },
+    "corrupt_reasoning_correct_final": {
+      "rlvr_mean_reward": 1.0,
+      "rlaif_mean_group_reward": 0.5,
+      "rlaif_group_reward_std": 0.07905694150420949,
+      "strict_parser_mean_reward": 1.0,
+      "last_num_parser_mean_reward": 1.0,
+      "any_num_parser_mean_reward": 1.0
+    },
+    "good_reasoning_wrong_final": {
+      "rlvr_mean_reward": 0.0,
+      "rlaif_mean_group_reward": 0.475,
+      "rlaif_group_reward_std": 0.049999999999999996,
+      "strict_parser_mean_reward": 0.0,
+      "last_num_parser_mean_reward": 0.0,
+      "any_num_parser_mean_reward": 1.0
+    },
+    "persuasive_filler_correct": {
+      "rlvr_mean_reward": 1.0,
+      "rlaif_mean_group_reward": 0.5875,
+      "rlaif_group_reward_std": 0.13169567191065923,
+      "strict_parser_mean_reward": 1.0,
+      "last_num_parser_mean_reward": 1.0,
+      "any_num_parser_mean_reward": 1.0
+    },
+    "gold_distractor_wrong_final": {
+      "rlvr_mean_reward": 0.0,
+      "rlaif_mean_group_reward": 0.44375,
+      "rlaif_group_reward_std": 0.13961442439805424,
+      "strict_parser_mean_reward": 0.0,
+      "last_num_parser_mean_reward": 0.0,
+      "any_num_parser_mean_reward": 1.0
+    }
+  },
+  "position_consistency": {
+    "overall": {
+      "consistent_better": 0.0,
+      "consistent_worse": 0.0125,
+      "consistent_tie": 0.7375,
+      "position_first": 0.025,
+      "position_second": 0.0125,
+      "inconsistent_other": 0.2125,
+      "order_consistency_rate": 0.75
+    },
+    "by_pair": {
+      "reasoning": {
+        "consistent_better": 0.0,
+        "consistent_worse": 0.0,
+        "consistent_tie": 1.0,
+        "position_first": 0.0,
+        "position_second": 0.0,
+        "inconsistent_other": 0.0
+      },
+      "outcome": {
+        "consistent_better": 0.0,
+        "consistent_worse": 0.0,
+        "consistent_tie": 0.85,
+        "position_first": 0.0,
+        "position_second": 0.0,
+        "inconsistent_other": 0.15
+      },
+      "filler": {
+        "consistent_better": 0.0,
+        "consistent_worse": 0.05,
+        "consistent_tie": 0.7,
+        "position_first": 0.1,
+        "position_second": 0.0,
+        "inconsistent_other": 0.15
+      },
+      "distractor": {
+        "consistent_better": 0.0,
+        "consistent_worse": 0.0,
+        "consistent_tie": 0.4,
+        "position_first": 0.0,
+        "position_second": 0.05,
+        "inconsistent_other": 0.55
+      }
+    }
+  },
+  "judge_cost": {
+    "new_calls": 200,
+    "seconds": 79.85760188102722,
+    "seconds_per_call": 0.3992880094051361
+  }
+}

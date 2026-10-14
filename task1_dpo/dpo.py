@@ -13,38 +13,33 @@ def dpo_loss(
 ):
     """Return scalar DPO loss plus lightweight diagnostics.
 
-    Validate this implementation against the equation in the assignment manual
-    before using it.
+    L_DPO = -E[ log sigmoid( beta * m ) ],
+    m     = [log pi(y+|x) - log ref(y+|x)] - [log pi(y-|x) - log ref(y-|x)]
+          = (log pi(y+|x) - log pi(y-|x)) - (log ref(y+|x) - log ref(y-|x)).
+
+    All inputs are SEQUENCE log-probabilities (sum over response tokens only).
+
+    Correction of the released starter: the starter computed
+        logits = beta * (policy_margin + ref_margin)
+    but the objective requires the policy margin MINUS the reference margin.
     """
+    chosen_logratio = policy_chosen_logp - ref_chosen_logp
+    rejected_logratio = policy_rejected_logp - ref_rejected_logp
 
-    policy_margin = (
-        policy_chosen_logp
-        - policy_rejected_logp
-    )
+    policy_margin = policy_chosen_logp - policy_rejected_logp
+    ref_margin = ref_chosen_logp - ref_rejected_logp
 
-    ref_margin = (
-        ref_chosen_logp
-        - ref_rejected_logp
-    )
+    margin = chosen_logratio - rejected_logratio  # == policy_margin - ref_margin
+    logits = beta * margin
 
-    # Starter implementation:
-    # students must validate the objective carefully.
-    logits = beta * (
-        policy_margin + ref_margin
-    )
-
-    loss = -F.logsigmoid(
-        logits
-    ).mean()
+    loss = -F.logsigmoid(logits).mean()
 
     return loss, {
-        "logit_mean":
-            logits.detach().mean(),
-
-        "policy_margin_mean":
-            policy_margin.detach().mean(),
-
-        "preference_accuracy": (
-            (policy_margin - ref_margin) > 0
-        ).float().mean().detach(),
+        "logit_mean": logits.detach().mean(),
+        "policy_margin_mean": policy_margin.detach().mean(),
+        "ref_margin_mean": ref_margin.detach().mean(),
+        "margin_mean": margin.detach().mean(),
+        "chosen_logratio_mean": chosen_logratio.detach().mean(),
+        "rejected_logratio_mean": rejected_logratio.detach().mean(),
+        "preference_accuracy": (margin.detach() > 0).float().mean(),
     }

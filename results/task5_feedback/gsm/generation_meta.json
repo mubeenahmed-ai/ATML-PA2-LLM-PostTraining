@@ -1,0 +1,14 @@
+{
+  "dataset_file": "data/gsm8k_eval.jsonl",
+  "n_rows": 300,
+  "limit": null,
+  "decoding": "greedy",
+  "max_new_tokens": 512,
+  "batch_size": 16,
+  "policies": {
+    "sft": null,
+    "rlvr": "checkpoints/rlvr_policy",
+    "rlaif": "checkpoints/rlaif_policy"
+  },
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct"
+}

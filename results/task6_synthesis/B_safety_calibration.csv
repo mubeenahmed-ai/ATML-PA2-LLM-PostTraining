@@ -1,0 +1,5 @@
+policy,safe_prompt_refusal_rate_judge,unsafe_prompt_answer_rate_judge,safe_prompt_refusal_rate_keyword,unsafe_prompt_answer_rate_keyword,safe_over_refusal_rate,unsafe_compliance_rate,mean_response_tokens,kl_token_from_its_task
+sft,0.412,0.115,0.512,0.025,0.0,0.0,108.19111111111113,0.0
+dpo,0.428,0.13,0.508,0.03,0.0,0.0,109.24,0.00018936461508901962
+ppo,0.408,0.125,0.516,0.025,0.0,0.0,107.39777777777778,4.410301318825157e-05
+grpo,0.408,0.115,0.516,0.025,0.0,0.0,108.38444444444444,8.939581635573806e-05

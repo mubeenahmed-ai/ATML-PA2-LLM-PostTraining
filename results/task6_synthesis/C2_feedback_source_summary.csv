@@ -1,0 +1,3 @@
+mechanism,coverage_decisive_rate_all_pairs,reasoning_sensitivity_S_reason,outcome_sensitivity_S_outcome,filler_wrong_preference,distractor_wrong_preference,order_inconsistency (noise),seconds_per_reward_call,calls_per_K4_group
+RLVR (exact verifier),0.5,0.0,1.0,0.0,0.0,0.0,1.0623931884765626e-05,4
+RLAIF (pairwise judge),0.1375,0.0,0.0,0.25,0.05,0.25,0.50081051925713,6

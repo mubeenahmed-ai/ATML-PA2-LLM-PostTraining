@@ -1,0 +1,9 @@
+Python: 3.13.15
+PyTorch: 2.11.0+cu130
+Transformers: 4.57.1
+Tokenizers: 0.22.1
+PEFT: 0.17.1
+TRL: 0.27.2
+CUDA available: True
+GPU: Tesla T4
+VRAM GiB: 14.56

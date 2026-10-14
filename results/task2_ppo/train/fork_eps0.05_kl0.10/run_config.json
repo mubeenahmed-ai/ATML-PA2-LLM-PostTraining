@@ -1,0 +1,42 @@
+{
+  "run_name": "fork_eps0.05_kl0.10",
+  "updates": 8,
+  "prompts_per_update": 1,
+  "ppo_epochs": 2,
+  "clip_epsilon": 0.05,
+  "kl_beta": 0.1,
+  "policy_learning_rate": 3e-06,
+  "value_lora_learning_rate": 0.0001,
+  "value_head_learning_rate": 0.0003,
+  "value_coef": 0.5,
+  "gamma": 1.0,
+  "gae_lambda": 0.95,
+  "missing_eos_penalty": 1.0,
+  "max_grad_norm": 1.0,
+  "max_prompt_length": 256,
+  "max_response_length": 512,
+  "reward_max_length": 1280,
+  "generation": {
+    "temperature": 0.7,
+    "top_p": 0.9,
+    "do_sample": true
+  },
+  "seed": 6304,
+  "start_policy": "checkpoints/ppo_midpoint_policy",
+  "start_critic": "checkpoints/ppo_midpoint_value",
+  "reward_model": "yavuz-ai/qwen2.5-1.5b-rm-ultrafeedback",
+  "reference": "Qwen/Qwen2.5-1.5B-Instruct (adapter disabled)",
+  "dtype": "float16",
+  "prompt_rows": [
+    696,
+    607,
+    213,
+    929,
+    944,
+    255,
+    600,
+    279
+  ],
+  "dropout": "disabled in policy and critic",
+  "advantage_whitening": "per update batch (normalize_advantages)"
+}

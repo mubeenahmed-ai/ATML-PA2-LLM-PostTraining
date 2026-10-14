@@ -1,0 +1,9 @@
+{
+  "judge_model": "Qwen/Qwen2.5-3B-Instruct",
+  "decoding": "greedy",
+  "max_new_tokens": 64,
+  "batch_size": 16,
+  "quantization": "4-bit nf4 (released load_judge)",
+  "prompt": "released JUDGE_PROMPT",
+  "parser": "released parse_json"
+}

@@ -1,0 +1,72 @@
+[
+  {
+    "check": "loss matches manual equation (beta=0.03)",
+    "ok": true,
+    "detail": "impl=1.05993022 manual=1.05993022"
+  },
+  {
+    "check": "loss matches manual equation (beta=0.1)",
+    "ok": true,
+    "detail": "impl=2.65268079 manual=2.65268079"
+  },
+  {
+    "check": "loss matches manual equation (beta=0.3)",
+    "ok": true,
+    "detail": "impl=7.66305268 manual=7.66305268"
+  },
+  {
+    "check": "diagnostic accuracy uses m > 0",
+    "ok": true,
+    "detail": "0.4531"
+  },
+  {
+    "check": "pi == ref gives loss log(2) and zero margin",
+    "ok": true,
+    "detail": "loss=0.693147 (log2=0.693147)"
+  },
+  {
+    "check": "starter formula (policy_margin + ref_margin) was wrong at pi == ref",
+    "ok": true,
+    "detail": "starter loss at pi==ref = 3.9169 (should be log 2 = 0.6931)"
+  },
+  {
+    "check": "gradient signs",
+    "ok": true,
+    "detail": "dL/dlogpi(y+) < 0 and dL/dlogpi(y-) > 0 for every pair"
+  },
+  {
+    "check": "invariant to a common shift of reference log-probs",
+    "ok": true,
+    "detail": "ok"
+  },
+  {
+    "check": "trainable LoRA parameters are fp32",
+    "ok": true,
+    "detail": "['torch.float32']"
+  },
+  {
+    "check": "fast sequence log-probs == common.generation.response_sequence_logprobs",
+    "ok": true,
+    "detail": "max |diff| = 0.00e+00 nats (values ~47.6)"
+  },
+  {
+    "check": "fresh LoRA: policy == reference",
+    "ok": true,
+    "detail": "max |logpi - logref| = 0.00e+00"
+  },
+  {
+    "check": "cached reference log-probs == on-the-fly reference",
+    "ok": true,
+    "detail": "max |diff| = 0.00e+00 nats (fp16 padding noise is expected to be tiny)"
+  },
+  {
+    "check": "one step increases the margin on its batch",
+    "ok": true,
+    "detail": "margin +0.0000 -> +12.8589, loss 0.6931 -> 0.2504"
+  },
+  {
+    "check": "generation log-prob helper == common.generation.response_token_logprobs",
+    "ok": true,
+    "detail": "max per-token |diff| = 0.00e+00 (fp16 rounding only)"
+  }
+]

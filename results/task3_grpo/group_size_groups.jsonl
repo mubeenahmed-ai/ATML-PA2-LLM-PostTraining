@@ -1,0 +1,168 @@
+{"K": 2, "prompt": "124", "difficulty": "medium", "std": 0.42578125, "informative": true, "rewards": [1.8359375, 2.6875], "truncated": [false, false]}
+{"K": 2, "prompt": "124", "difficulty": "medium", "std": 0.09375, "informative": true, "rewards": [2.328125, 2.140625], "truncated": [false, false]}
+{"K": 2, "prompt": "124", "difficulty": "medium", "std": 0.41796875, "informative": true, "rewards": [1.9453125, 2.78125], "truncated": [false, false]}
+{"K": 2, "prompt": "124", "difficulty": "medium", "std": 0.375, "informative": true, "rewards": [2.265625, 3.015625], "truncated": [false, false]}
+{"K": 2, "prompt": "671", "difficulty": "hard", "std": 0.6796875, "informative": true, "rewards": [-2.0, -3.359375], "truncated": [false, false]}
+{"K": 2, "prompt": "671", "difficulty": "hard", "std": 2.84765625, "informative": true, "rewards": [-3.8125, 1.8828125], "truncated": [true, true]}
+{"K": 2, "prompt": "671", "difficulty": "hard", "std": 0.85546875, "informative": true, "rewards": [-0.0703125, -1.78125], "truncated": [false, false]}
+{"K": 2, "prompt": "671", "difficulty": "hard", "std": 2.076171875, "informative": true, "rewards": [0.82421875, -3.328125], "truncated": [false, false]}
+{"K": 2, "prompt": "510", "difficulty": "medium", "std": 0.751953125, "informative": true, "rewards": [0.36328125, 1.8671875], "truncated": [false, false]}
+{"K": 2, "prompt": "510", "difficulty": "medium", "std": 0.390625, "informative": true, "rewards": [1.484375, 2.265625], "truncated": [false, false]}
+{"K": 2, "prompt": "510", "difficulty": "medium", "std": 0.46484375, "informative": true, "rewards": [2.53125, 1.6015625], "truncated": [false, false]}
+{"K": 2, "prompt": "510", "difficulty": "medium", "std": 0.484375, "informative": true, "rewards": [1.921875, 2.890625], "truncated": [false, false]}
+{"K": 2, "prompt": "981", "difficulty": "medium", "std": 0.3046875, "informative": true, "rewards": [2.390625, 1.78125], "truncated": [false, false]}
+{"K": 2, "prompt": "981", "difficulty": "medium", "std": 0.046875, "informative": true, "rewards": [2.484375, 2.390625], "truncated": [false, false]}
+{"K": 2, "prompt": "981", "difficulty": "medium", "std": 0.0, "informative": false, "rewards": [2.40625, 2.40625], "truncated": [false, false]}
+{"K": 2, "prompt": "981", "difficulty": "medium", "std": 0.35546875, "informative": true, "rewards": [2.484375, 1.7734375], "truncated": [false, false]}
+{"K": 2, "prompt": "175", "difficulty": "hard", "std": 0.28515625, "informative": true, "rewards": [0.267578125, -0.302734375], "truncated": [true, true]}
+{"K": 2, "prompt": "175", "difficulty": "hard", "std": 0.24658203125, "informative": true, "rewards": [0.7265625, 0.2333984375], "truncated": [true, true]}
+{"K": 2, "prompt": "175", "difficulty": "hard", "std": 0.9111328125, "informative": true, "rewards": [2.125, 0.302734375], "truncated": [true, false]}
+{"K": 2, "prompt": "175", "difficulty": "hard", "std": 0.8017578125, "informative": true, "rewards": [0.490234375, 2.09375], "truncated": [true, true]}
+{"K": 2, "prompt": "185", "difficulty": "easy", "std": 0.00390625, "informative": true, "rewards": [0.5625, 0.5546875], "truncated": [false, true]}
+{"K": 2, "prompt": "185", "difficulty": "easy", "std": 0.140625, "informative": true, "rewards": [2.265625, 2.546875], "truncated": [true, true]}
+{"K": 2, "prompt": "185", "difficulty": "easy", "std": 0.234375, "informative": true, "rewards": [3.96875, 3.5], "truncated": [false, false]}
+{"K": 2, "prompt": "185", "difficulty": "easy", "std": 0.421875, "informative": true, "rewards": [3.5625, 2.71875], "truncated": [false, true]}
+{"K": 2, "prompt": "953", "difficulty": "hard", "std": 0.6875, "informative": true, "rewards": [-0.71484375, 0.66015625], "truncated": [false, false]}
+{"K": 2, "prompt": "953", "difficulty": "hard", "std": 0.314453125, "informative": true, "rewards": [0.90234375, 0.2734375], "truncated": [false, false]}
+{"K": 2, "prompt": "953", "difficulty": "hard", "std": 0.12890625, "informative": true, "rewards": [1.4375, 1.1796875], "truncated": [false, false]}
+{"K": 2, "prompt": "953", "difficulty": "hard", "std": 0.77734375, "informative": true, "rewards": [0.2890625, 1.84375], "truncated": [false, false]}
+{"K": 2, "prompt": "873", "difficulty": "medium", "std": 0.1796875, "informative": true, "rewards": [2.90625, 3.265625], "truncated": [true, true]}
+{"K": 2, "prompt": "873", "difficulty": "medium", "std": 0.125, "informative": true, "rewards": [1.953125, 1.703125], "truncated": [false, true]}
+{"K": 2, "prompt": "873", "difficulty": "medium", "std": 0.109375, "informative": true, "rewards": [2.34375, 2.5625], "truncated": [true, true]}
+{"K": 2, "prompt": "873", "difficulty": "medium", "std": 0.70703125, "informative": true, "rewards": [2.078125, 0.6640625], "truncated": [true, true]}
+{"K": 2, "prompt": "796", "difficulty": "medium", "std": 0.34765625, "informative": true, "rewards": [2.59375, 1.8984375], "truncated": [false, false]}
+{"K": 2, "prompt": "796", "difficulty": "medium", "std": 1.103515625, "informative": true, "rewards": [0.65234375, 2.859375], "truncated": [true, false]}
+{"K": 2, "prompt": "796", "difficulty": "medium", "std": 0.984375, "informative": true, "rewards": [2.984375, 1.015625], "truncated": [false, true]}
+{"K": 2, "prompt": "796", "difficulty": "medium", "std": 1.344970703125, "informative": true, "rewards": [-0.08056640625, 2.609375], "truncated": [true, false]}
+{"K": 2, "prompt": "263", "difficulty": "easy", "std": 0.48828125, "informative": true, "rewards": [2.90625, 1.9296875], "truncated": [false, false]}
+{"K": 2, "prompt": "263", "difficulty": "easy", "std": 0.5703125, "informative": true, "rewards": [1.8125, 2.953125], "truncated": [false, false]}
+{"K": 2, "prompt": "263", "difficulty": "easy", "std": 0.140625, "informative": true, "rewards": [2.453125, 2.734375], "truncated": [false, false]}
+{"K": 2, "prompt": "263", "difficulty": "easy", "std": 0.33203125, "informative": true, "rewards": [2.65625, 1.9921875], "truncated": [false, false]}
+{"K": 2, "prompt": "507", "difficulty": "easy", "std": 0.8203125, "informative": true, "rewards": [2.078125, 3.71875], "truncated": [false, false]}
+{"K": 2, "prompt": "507", "difficulty": "easy", "std": 0.4375, "informative": true, "rewards": [2.625, 3.5], "truncated": [false, false]}
+{"K": 2, "prompt": "507", "difficulty": "easy", "std": 0.828125, "informative": true, "rewards": [2.265625, 3.921875], "truncated": [false, false]}
+{"K": 2, "prompt": "507", "difficulty": "easy", "std": 0.03125, "informative": true, "rewards": [3.796875, 3.859375], "truncated": [false, false]}
+{"K": 2, "prompt": "961", "difficulty": "hard", "std": 0.0458984375, "informative": true, "rewards": [0.3515625, 0.259765625], "truncated": [false, false]}
+{"K": 2, "prompt": "961", "difficulty": "hard", "std": 0.5927734375, "informative": true, "rewards": [0.337890625, -0.84765625], "truncated": [false, false]}
+{"K": 2, "prompt": "961", "difficulty": "hard", "std": 0.36669921875, "informative": true, "rewards": [-0.83203125, -0.0986328125], "truncated": [false, false]}
+{"K": 2, "prompt": "961", "difficulty": "hard", "std": 0.87109375, "informative": true, "rewards": [-1.234375, 0.5078125], "truncated": [false, false]}
+{"K": 2, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375], "truncated": [false, false]}
+{"K": 2, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375], "truncated": [false, false]}
+{"K": 2, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375], "truncated": [false, false]}
+{"K": 2, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375], "truncated": [false, false]}
+{"K": 2, "prompt": "936", "difficulty": "hard", "std": 0.2646484375, "informative": true, "rewards": [0.71484375, 0.185546875], "truncated": [false, false]}
+{"K": 2, "prompt": "936", "difficulty": "hard", "std": 0.43359375, "informative": true, "rewards": [2.03125, 1.1640625], "truncated": [false, false]}
+{"K": 2, "prompt": "936", "difficulty": "hard", "std": 0.72705078125, "informative": true, "rewards": [-1.21875, 0.2353515625], "truncated": [false, false]}
+{"K": 2, "prompt": "936", "difficulty": "hard", "std": 0.10546875, "informative": true, "rewards": [2.125, 1.9140625], "truncated": [false, false]}
+{"K": 2, "prompt": "254", "difficulty": "medium", "std": 1.2646484375, "informative": true, "rewards": [2.0625, -0.466796875], "truncated": [true, true]}
+{"K": 2, "prompt": "254", "difficulty": "medium", "std": 0.08203125, "informative": true, "rewards": [1.1640625, 1.328125], "truncated": [true, true]}
+{"K": 2, "prompt": "254", "difficulty": "medium", "std": 0.93017578125, "informative": true, "rewards": [2.03125, 0.1708984375], "truncated": [true, true]}
+{"K": 2, "prompt": "254", "difficulty": "medium", "std": 0.30078125, "informative": true, "rewards": [2.484375, 1.8828125], "truncated": [false, false]}
+{"K": 2, "prompt": "463", "difficulty": "easy", "std": 0.1875, "informative": true, "rewards": [3.40625, 3.03125], "truncated": [false, false]}
+{"K": 2, "prompt": "463", "difficulty": "easy", "std": 0.0625, "informative": true, "rewards": [2.828125, 2.953125], "truncated": [false, false]}
+{"K": 2, "prompt": "463", "difficulty": "easy", "std": 0.1328125, "informative": true, "rewards": [3.046875, 2.78125], "truncated": [false, false]}
+{"K": 2, "prompt": "463", "difficulty": "easy", "std": 0.0546875, "informative": true, "rewards": [3.046875, 2.9375], "truncated": [false, false]}
+{"K": 2, "prompt": "436", "difficulty": "medium", "std": 0.1328125, "informative": true, "rewards": [2.515625, 2.25], "truncated": [false, false]}
+{"K": 2, "prompt": "436", "difficulty": "medium", "std": 0.6171875, "informative": true, "rewards": [1.3125, 2.546875], "truncated": [false, false]}
+{"K": 2, "prompt": "436", "difficulty": "medium", "std": 0.1015625, "informative": true, "rewards": [2.1875, 2.390625], "truncated": [false, false]}
+{"K": 2, "prompt": "436", "difficulty": "medium", "std": 0.0625, "informative": true, "rewards": [2.1875, 2.3125], "truncated": [false, false]}
+{"K": 2, "prompt": "942", "difficulty": "easy", "std": 0.1640625, "informative": true, "rewards": [3.0, 2.671875], "truncated": [false, false]}
+{"K": 2, "prompt": "942", "difficulty": "easy", "std": 0.1796875, "informative": true, "rewards": [2.703125, 2.34375], "truncated": [false, false]}
+{"K": 2, "prompt": "942", "difficulty": "easy", "std": 0.1015625, "informative": true, "rewards": [2.90625, 2.703125], "truncated": [false, false]}
+{"K": 2, "prompt": "942", "difficulty": "easy", "std": 0.0703125, "informative": true, "rewards": [2.515625, 2.65625], "truncated": [false, false]}
+{"K": 2, "prompt": "184", "difficulty": "easy", "std": 0.171875, "informative": true, "rewards": [2.65625, 3.0], "truncated": [false, false]}
+{"K": 2, "prompt": "184", "difficulty": "easy", "std": 0.1328125, "informative": true, "rewards": [3.015625, 2.75], "truncated": [false, false]}
+{"K": 2, "prompt": "184", "difficulty": "easy", "std": 0.3125, "informative": true, "rewards": [3.0625, 3.6875], "truncated": [false, false]}
+{"K": 2, "prompt": "184", "difficulty": "easy", "std": 0.1875, "informative": true, "rewards": [2.96875, 2.59375], "truncated": [false, false]}
+{"K": 2, "prompt": "922", "difficulty": "medium", "std": 0.1015625, "informative": true, "rewards": [2.609375, 2.40625], "truncated": [false, false]}
+{"K": 2, "prompt": "922", "difficulty": "medium", "std": 0.0078125, "informative": true, "rewards": [2.359375, 2.375], "truncated": [false, false]}
+{"K": 2, "prompt": "922", "difficulty": "medium", "std": 0.33984375, "informative": true, "rewards": [2.546875, 1.8671875], "truncated": [false, false]}
+{"K": 2, "prompt": "922", "difficulty": "medium", "std": 0.2421875, "informative": true, "rewards": [2.34375, 2.828125], "truncated": [false, false]}
+{"K": 2, "prompt": "755", "difficulty": "easy", "std": 0.5859375, "informative": true, "rewards": [3.59375, 2.421875], "truncated": [false, false]}
+{"K": 2, "prompt": "755", "difficulty": "easy", "std": 0.0859375, "informative": true, "rewards": [3.34375, 3.171875], "truncated": [false, false]}
+{"K": 2, "prompt": "755", "difficulty": "easy", "std": 0.234375, "informative": true, "rewards": [2.78125, 2.3125], "truncated": [false, false]}
+{"K": 2, "prompt": "755", "difficulty": "easy", "std": 0.0546875, "informative": true, "rewards": [3.421875, 3.53125], "truncated": [false, false]}
+{"K": 2, "prompt": "457", "difficulty": "hard", "std": 0.2783203125, "informative": true, "rewards": [-1.0078125, -0.451171875], "truncated": [false, false]}
+{"K": 2, "prompt": "457", "difficulty": "hard", "std": 0.09765625, "informative": true, "rewards": [-0.6953125, -0.5], "truncated": [false, false]}
+{"K": 2, "prompt": "457", "difficulty": "hard", "std": 0.2109375, "informative": true, "rewards": [-1.5234375, -1.1015625], "truncated": [false, false]}
+{"K": 2, "prompt": "457", "difficulty": "hard", "std": 0.677001953125, "informative": true, "rewards": [-0.09130859375, -1.4453125], "truncated": [false, false]}
+{"K": 2, "prompt": "832", "difficulty": "easy", "std": 0.4296875, "informative": true, "rewards": [2.328125, 3.1875], "truncated": [false, false]}
+{"K": 2, "prompt": "832", "difficulty": "easy", "std": 0.078125, "informative": true, "rewards": [2.390625, 2.234375], "truncated": [false, false]}
+{"K": 2, "prompt": "832", "difficulty": "easy", "std": 0.203125, "informative": true, "rewards": [2.5625, 2.15625], "truncated": [false, false]}
+{"K": 2, "prompt": "832", "difficulty": "easy", "std": 0.0546875, "informative": true, "rewards": [3.140625, 3.25], "truncated": [false, false]}
+{"K": 2, "prompt": "495", "difficulty": "hard", "std": 0.21484375, "informative": true, "rewards": [-1.8671875, -1.4375], "truncated": [false, false]}
+{"K": 2, "prompt": "495", "difficulty": "hard", "std": 0.08984375, "informative": true, "rewards": [-1.9140625, -1.734375], "truncated": [false, false]}
+{"K": 2, "prompt": "495", "difficulty": "hard", "std": 0.201171875, "informative": true, "rewards": [-1.3515625, -0.94921875], "truncated": [false, false]}
+{"K": 2, "prompt": "495", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [-1.0546875, -1.0546875], "truncated": [false, false]}
+{"K": 4, "prompt": "124", "difficulty": "medium", "std": 0.3085875691627854, "informative": true, "rewards": [1.8359375, 2.6875, 2.328125, 2.140625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "124", "difficulty": "medium", "std": 0.42058450625801336, "informative": true, "rewards": [1.9453125, 2.78125, 2.265625, 3.015625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "671", "difficulty": "hard", "std": 2.2406991943673904, "informative": true, "rewards": [-2.0, -3.359375, -3.8125, 1.8828125], "truncated": [false, false, true, true]}
+{"K": 4, "prompt": "671", "difficulty": "hard", "std": 1.59616892633394, "informative": true, "rewards": [-0.0703125, -1.78125, 0.82421875, -3.328125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "510", "difficulty": "medium", "std": 0.7094516527882946, "informative": true, "rewards": [0.36328125, 1.8671875, 1.484375, 2.265625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "510", "difficulty": "medium", "std": 0.5042051862813858, "informative": true, "rewards": [2.53125, 1.6015625, 1.921875, 2.890625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "981", "difficulty": "medium", "std": 0.28002663621910595, "informative": true, "rewards": [2.390625, 1.78125, 2.484375, 2.390625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "981", "difficulty": "medium", "std": 0.2870695125388568, "informative": true, "rewards": [2.40625, 2.40625, 2.484375, 1.7734375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "175", "difficulty": "hard", "std": 0.3646224500470845, "informative": true, "rewards": [0.267578125, -0.302734375, 0.7265625, 0.2333984375], "truncated": [true, true, true, true]}
+{"K": 4, "prompt": "175", "difficulty": "hard", "std": 0.859078095906142, "informative": true, "rewards": [2.125, 0.302734375, 0.490234375, 2.09375], "truncated": [true, false, true, true]}
+{"K": 4, "prompt": "185", "difficulty": "easy", "std": 0.9291682997434032, "informative": true, "rewards": [0.5625, 0.5546875, 2.265625, 2.546875], "truncated": [false, true, true, true]}
+{"K": 4, "prompt": "185", "difficulty": "easy", "std": 0.4523160883165665, "informative": true, "rewards": [3.96875, 3.5, 3.5625, 2.71875], "truncated": [false, false, false, true]}
+{"K": 4, "prompt": "953", "difficulty": "hard", "std": 0.6167631984453539, "informative": true, "rewards": [-0.71484375, 0.66015625, 0.90234375, 0.2734375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "953", "difficulty": "hard", "std": 0.5701787086218013, "informative": true, "rewards": [1.4375, 1.1796875, 0.2890625, 1.84375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "873", "difficulty": "medium", "std": 0.6476722706100575, "informative": true, "rewards": [2.90625, 3.265625, 1.953125, 1.703125], "truncated": [true, true, false, true]}
+{"K": 4, "prompt": "873", "difficulty": "medium", "std": 0.7406928824046589, "informative": true, "rewards": [2.34375, 2.5625, 2.078125, 0.6640625], "truncated": [true, true, true, true]}
+{"K": 4, "prompt": "796", "difficulty": "medium", "std": 0.8540422922780299, "informative": true, "rewards": [2.59375, 1.8984375, 0.65234375, 2.859375], "truncated": [false, false, true, false]}
+{"K": 4, "prompt": "796", "difficulty": "medium", "std": 1.2346033476622236, "informative": true, "rewards": [2.984375, 1.015625, -0.08056640625, 2.609375], "truncated": [false, true, true, false]}
+{"K": 4, "prompt": "263", "difficulty": "easy", "std": 0.5311745982795317, "informative": true, "rewards": [2.90625, 1.9296875, 1.8125, 2.953125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "263", "difficulty": "easy", "std": 0.28839529206008524, "informative": true, "rewards": [2.453125, 2.734375, 2.65625, 1.9921875], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "507", "difficulty": "easy", "std": 0.6624866412273439, "informative": true, "rewards": [2.078125, 3.71875, 2.625, 3.5], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "507", "difficulty": "easy", "std": 0.6915276199970252, "informative": true, "rewards": [2.265625, 3.921875, 3.796875, 3.859375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "961", "difficulty": "hard", "std": 0.505268945368029, "informative": true, "rewards": [0.3515625, 0.259765625, 0.337890625, -0.84765625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "961", "difficulty": "hard", "std": 0.6702536159163152, "informative": true, "rewards": [-0.83203125, -0.0986328125, -1.234375, 0.5078125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375, 1.2734375, 1.2734375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375, 1.2734375, 1.2734375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "936", "difficulty": "hard", "std": 0.67689572204825, "informative": true, "rewards": [0.71484375, 0.185546875, 2.03125, 1.1640625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "936", "difficulty": "hard", "std": 1.3588351131266756, "informative": true, "rewards": [-1.21875, 0.2353515625, 2.125, 1.9140625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "254", "difficulty": "medium", "std": 0.9237221784105724, "informative": true, "rewards": [2.0625, -0.466796875, 1.1640625, 1.328125], "truncated": [true, true, true, true]}
+{"K": 4, "prompt": "254", "difficulty": "medium", "std": 0.8779580320677265, "informative": true, "rewards": [2.03125, 0.1708984375, 2.484375, 1.8828125], "truncated": [true, true, false, false]}
+{"K": 4, "prompt": "463", "difficulty": "easy", "std": 0.2155174097520894, "informative": true, "rewards": [3.40625, 3.03125, 2.828125, 2.953125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "463", "difficulty": "easy", "std": 0.10881553341550093, "informative": true, "rewards": [3.046875, 2.78125, 3.046875, 2.9375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "436", "difficulty": "medium", "std": 0.5006099794875248, "informative": true, "rewards": [2.515625, 2.25, 1.3125, 2.546875], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "436", "difficulty": "medium", "std": 0.08655671799281382, "informative": true, "rewards": [2.1875, 2.390625, 2.1875, 2.3125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "942", "difficulty": "easy", "std": 0.23241366844755496, "informative": true, "rewards": [3.0, 2.671875, 2.703125, 2.34375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "942", "difficulty": "easy", "std": 0.13997244427475716, "informative": true, "rewards": [2.90625, 2.703125, 2.515625, 2.65625], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "184", "difficulty": "easy", "std": 0.15600566834153015, "informative": true, "rewards": [2.65625, 3.0, 3.015625, 2.75], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "184", "difficulty": "easy", "std": 0.39311705079403514, "informative": true, "rewards": [3.0625, 3.6875, 2.96875, 2.59375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "922", "difficulty": "medium", "std": 0.10065702130254005, "informative": true, "rewards": [2.609375, 2.40625, 2.359375, 2.375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "922", "difficulty": "medium", "std": 0.3506661750973736, "informative": true, "rewards": [2.546875, 1.8671875, 2.34375, 2.828125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "755", "difficulty": "easy", "std": 0.4370114459670936, "informative": true, "rewards": [3.59375, 2.421875, 3.34375, 3.171875], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "755", "difficulty": "easy", "std": 0.495016053835315, "informative": true, "rewards": [2.78125, 2.3125, 3.421875, 3.53125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "457", "difficulty": "hard", "std": 0.2187341956832677, "informative": true, "rewards": [-1.0078125, -0.451171875, -0.6953125, -0.5], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "457", "difficulty": "hard", "std": 0.5704810925383759, "informative": true, "rewards": [-1.5234375, -1.1015625, -0.09130859375, -1.4453125], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "832", "difficulty": "easy", "std": 0.3807141149270506, "informative": true, "rewards": [2.328125, 3.1875, 2.390625, 2.234375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "832", "difficulty": "easy", "std": 0.4436475178756075, "informative": true, "rewards": [2.5625, 2.15625, 3.140625, 3.25], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "495", "difficulty": "hard", "std": 0.18574208481201157, "informative": true, "rewards": [-1.8671875, -1.4375, -1.9140625, -1.734375], "truncated": [false, false, false, false]}
+{"K": 4, "prompt": "495", "difficulty": "hard", "std": 0.1500827561020893, "informative": true, "rewards": [-1.3515625, -0.94921875, -1.0546875, -1.0546875], "truncated": [false, false, false, false]}
+{"K": 8, "prompt": "124", "difficulty": "medium", "std": 0.3900972998116143, "informative": true, "rewards": [1.8359375, 2.6875, 2.328125, 2.140625, 1.9453125, 2.78125, 2.265625, 3.015625], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "671", "difficulty": "hard", "std": 1.9795737868410508, "informative": true, "rewards": [-2.0, -3.359375, -3.8125, 1.8828125, -0.0703125, -1.78125, 0.82421875, -3.328125], "truncated": [false, false, true, true, false, false, false, false]}
+{"K": 8, "prompt": "510", "difficulty": "medium", "std": 0.7184153897474302, "informative": true, "rewards": [0.36328125, 1.8671875, 1.484375, 2.265625, 2.53125, 1.6015625, 1.921875, 2.890625], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "981", "difficulty": "medium", "std": 0.28358507379548353, "informative": true, "rewards": [2.390625, 1.78125, 2.484375, 2.390625, 2.40625, 2.40625, 2.484375, 1.7734375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "175", "difficulty": "hard", "std": 0.8345445721364121, "informative": true, "rewards": [0.267578125, -0.302734375, 0.7265625, 0.2333984375, 2.125, 0.302734375, 0.490234375, 2.09375], "truncated": [true, true, true, true, true, false, true, true]}
+{"K": 8, "prompt": "185", "difficulty": "easy", "std": 1.2204730251883498, "informative": true, "rewards": [0.5625, 0.5546875, 2.265625, 2.546875, 3.96875, 3.5, 3.5625, 2.71875], "truncated": [false, true, true, true, false, false, false, true]}
+{"K": 8, "prompt": "953", "difficulty": "hard", "std": 0.7473388189352107, "informative": true, "rewards": [-0.71484375, 0.66015625, 0.90234375, 0.2734375, 1.4375, 1.1796875, 0.2890625, 1.84375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "873", "difficulty": "medium", "std": 0.7471864697278944, "informative": true, "rewards": [2.90625, 3.265625, 1.953125, 1.703125, 2.34375, 2.5625, 2.078125, 0.6640625], "truncated": [true, true, false, true, true, true, true, true]}
+{"K": 8, "prompt": "796", "difficulty": "medium", "std": 1.0774114690525276, "informative": true, "rewards": [2.59375, 1.8984375, 0.65234375, 2.859375, 2.984375, 1.015625, -0.08056640625, 2.609375], "truncated": [false, false, true, false, false, true, true, false]}
+{"K": 8, "prompt": "263", "difficulty": "easy", "std": 0.4283893743484863, "informative": true, "rewards": [2.90625, 1.9296875, 1.8125, 2.953125, 2.453125, 2.734375, 2.65625, 1.9921875], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "507", "difficulty": "easy", "std": 0.7185137816655707, "informative": true, "rewards": [2.078125, 3.71875, 2.625, 3.5, 2.265625, 3.921875, 3.796875, 3.859375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "961", "difficulty": "hard", "std": 0.6329310623998741, "informative": true, "rewards": [0.3515625, 0.259765625, 0.337890625, -0.84765625, -0.83203125, -0.0986328125, -1.234375, 0.5078125], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "280", "difficulty": "hard", "std": 0.0, "informative": false, "rewards": [1.2734375, 1.2734375, 1.2734375, 1.2734375, 1.2734375, 1.2734375, 1.2734375, 1.2734375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "936", "difficulty": "hard", "std": 1.0813008883524027, "informative": true, "rewards": [0.71484375, 0.185546875, 2.03125, 1.1640625, -1.21875, 0.2353515625, 2.125, 1.9140625], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "254", "difficulty": "medium", "std": 0.9530207389339215, "informative": true, "rewards": [2.0625, -0.466796875, 1.1640625, 1.328125, 2.03125, 0.1708984375, 2.484375, 1.8828125], "truncated": [true, true, true, true, true, true, false, false]}
+{"K": 8, "prompt": "463", "difficulty": "easy", "std": 0.1781095799246562, "informative": true, "rewards": [3.40625, 3.03125, 2.828125, 2.953125, 3.046875, 2.78125, 3.046875, 2.9375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "436", "difficulty": "medium", "std": 0.3636748120182155, "informative": true, "rewards": [2.515625, 2.25, 1.3125, 2.546875, 2.1875, 2.390625, 2.1875, 2.3125], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "942", "difficulty": "easy", "std": 0.19200321449132043, "informative": true, "rewards": [3.0, 2.671875, 2.703125, 2.34375, 2.90625, 2.703125, 2.515625, 2.65625], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "184", "difficulty": "easy", "std": 0.3191133709292974, "informative": true, "rewards": [2.65625, 3.0, 3.015625, 2.75, 3.0625, 3.6875, 2.96875, 2.59375], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "922", "difficulty": "medium", "std": 0.2587853773322521, "informative": true, "rewards": [2.609375, 2.40625, 2.359375, 2.375, 2.546875, 1.8671875, 2.34375, 2.828125], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "755", "difficulty": "easy", "std": 0.4708246731031992, "informative": true, "rewards": [3.59375, 2.421875, 3.34375, 3.171875, 2.78125, 2.3125, 3.421875, 3.53125], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "457", "difficulty": "hard", "std": 0.47132480689723505, "informative": true, "rewards": [-1.0078125, -0.451171875, -0.6953125, -0.5, -1.5234375, -1.1015625, -0.09130859375, -1.4453125], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "832", "difficulty": "easy", "std": 0.4307515235028194, "informative": true, "rewards": [2.328125, 3.1875, 2.390625, 2.234375, 2.5625, 2.15625, 3.140625, 3.25], "truncated": [false, false, false, false, false, false, false, false]}
+{"K": 8, "prompt": "495", "difficulty": "hard", "std": 0.35993681406126987, "informative": true, "rewards": [-1.8671875, -1.4375, -1.9140625, -1.734375, -1.3515625, -0.94921875, -1.0546875, -1.0546875], "truncated": [false, false, false, false, false, false, false, false]}

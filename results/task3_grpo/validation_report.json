@@ -1,0 +1,72 @@
+[
+  {
+    "check": "advantages normalised within each group",
+    "ok": true,
+    "detail": "[-1.342, -0.447, 0.447, 1.342, 0.0, 0.0, 0.0, 0.0, -1.0, 1.0, -1.0, 1.0]"
+  },
+  {
+    "check": "identical-reward group gets zero advantage",
+    "ok": true,
+    "detail": "group 2 rewards all 10 -> A = 0"
+  },
+  {
+    "check": "informative groups: zero mean, unit (population) std",
+    "ok": true,
+    "detail": "ok"
+  },
+  {
+    "check": "starter (global batch normalisation) differs",
+    "ok": true,
+    "detail": "starter gives group 2 (all 10s) advantages +1.37 instead of 0"
+  },
+  {
+    "check": "micro-batch accumulation == grpo_policy_loss (grpo)",
+    "ok": true,
+    "detail": "full=-0.1698031748 accumulated=-0.1698031748"
+  },
+  {
+    "check": "micro-batch accumulation == grpo_policy_loss (dr_grpo)",
+    "ok": true,
+    "detail": "full=-0.1291092877 accumulated=-0.1291092877"
+  },
+  {
+    "check": "truncated completion is fully masked",
+    "ok": true,
+    "detail": "mask row 2 all zero"
+  },
+  {
+    "check": "per-token gradient weight (grpo)",
+    "ok": true,
+    "detail": "short (T=2) 0.2500, long (T=8) 0.0625"
+  },
+  {
+    "check": "per-token gradient weight (dr_grpo)",
+    "ok": true,
+    "detail": "short (T=2) 0.0625, long (T=8) 0.0625"
+  },
+  {
+    "check": "k3 KL estimator is non-negative",
+    "ok": true,
+    "detail": "exp(x) - x - 1 >= 0"
+  },
+  {
+    "check": "response log-prob helper == common.generation.response_token_logprobs",
+    "ok": true,
+    "detail": "max per-token |diff| = 0.00e+00"
+  },
+  {
+    "check": "train-mode forward == eval-mode forward (dropout disabled, ratio = 1)",
+    "ok": true,
+    "detail": "max |log ratio| = 0.00e+00"
+  },
+  {
+    "check": "entropy finite and non-negative",
+    "ok": true,
+    "detail": "mean 1.108 nats"
+  },
+  {
+    "check": "trainable LoRA parameters are fp32",
+    "ok": true,
+    "detail": "['torch.float32']"
+  }
+]

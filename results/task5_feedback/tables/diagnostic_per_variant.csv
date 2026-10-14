@@ -1,0 +1,6 @@
+variant,rlvr_mean_reward,rlaif_mean_group_reward,rlaif_group_reward_std,strict_parser_mean_reward,last_num_parser_mean_reward,any_num_parser_mean_reward
+clean_correct,1.0,0.49375,0.08361930100162282,1.0,1.0,1.0
+corrupt_reasoning_correct_final,1.0,0.5,0.07905694150420949,1.0,1.0,1.0
+good_reasoning_wrong_final,0.0,0.475,0.049999999999999996,0.0,0.0,1.0
+persuasive_filler_correct,1.0,0.5875,0.13169567191065923,1.0,1.0,1.0
+gold_distractor_wrong_final,0.0,0.44375,0.13961442439805424,0.0,0.0,1.0

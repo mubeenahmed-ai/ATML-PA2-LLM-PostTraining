@@ -1,0 +1,87 @@
+[
+  {
+    "check": "clipped surrogate matches manual (eps=0.05)",
+    "ok": true,
+    "detail": "impl=0.16650126 manual=0.16650126"
+  },
+  {
+    "check": "clip fraction = ratio outside band before clipping (eps=0.05)",
+    "ok": true,
+    "detail": "1.0000"
+  },
+  {
+    "check": "clipped surrogate matches manual (eps=0.2)",
+    "ok": true,
+    "detail": "impl=0.12209421 manual=0.12209421"
+  },
+  {
+    "check": "clip fraction = ratio outside band before clipping (eps=0.2)",
+    "ok": true,
+    "detail": "0.7857"
+  },
+  {
+    "check": "clipped surrogate matches manual (eps=0.5)",
+    "ok": true,
+    "detail": "impl=0.08098250 manual=0.08098250"
+  },
+  {
+    "check": "clip fraction = ratio outside band before clipping (eps=0.5)",
+    "ok": true,
+    "detail": "0.2857"
+  },
+  {
+    "check": "min (pessimistic) vs starter max (optimistic)",
+    "ok": true,
+    "detail": "corrected loss=-0.200, starter loss=-0.500 (starter rewards ratios beyond the band)"
+  },
+  {
+    "check": "zero gradient iff clip binds",
+    "ok": true,
+    "detail": "grads=['0.000', '0.375', '0.000', '-0.125'] for (A>0,r>1+e) (A<0,r>1+e) (A<0,r<1-e) (A>0,r<1-e)"
+  },
+  {
+    "check": "GAE matches brute-force sum of (gamma*lambda)^k deltas",
+    "ok": true,
+    "detail": "max |diff| = 4.44e-16"
+  },
+  {
+    "check": "returns = advantages + values on valid tokens",
+    "ok": true,
+    "detail": "ok"
+  },
+  {
+    "check": "KL-shaped rewards place the task reward on the final valid token",
+    "ok": true,
+    "detail": "ok"
+  },
+  {
+    "check": "advantage whitening: zero mean / unit std over valid tokens",
+    "ok": true,
+    "detail": "ok"
+  },
+  {
+    "check": "response log-prob helper == common.generation.response_token_logprobs",
+    "ok": true,
+    "detail": "max per-token |diff| = 1.47e-04"
+  },
+  {
+    "check": "entropy is non-negative and finite",
+    "ok": true,
+    "detail": "mean entropy 0.773 nats"
+  },
+  {
+    "check": "first-epoch ratio == 1 (dropout disabled, train vs eval forward identical)",
+    "ok": true,
+    "detail": "max |log ratio| = 0.00e+00"
+  },
+  {
+    "check": "critic values (fp32 head, fresh zero LoRA) == course token_values of the supplied critic",
+    "ok": true,
+    "detail": "max |diff| = 9.57e-04; mean value +0.786"
+  },
+  {
+    "check": "critic trainable parameters are fp32",
+    "ok": true,
+    "detail": "['torch.float32']"
+  }
+]

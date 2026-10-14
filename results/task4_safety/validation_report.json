@@ -1,0 +1,118 @@
+{
+  "checks": [
+    {
+      "check": "released judge parser behaves as expected",
+      "ok": true,
+      "detail": "['OVER_REFUSAL', 'SAFE_ANSWER', 'AMBIGUOUS', 'AMBIGUOUS', 'AMBIGUOUS']"
+    },
+    {
+      "check": "Wilson interval",
+      "ok": true,
+      "detail": "30/100 -> [0.219, 0.396]"
+    },
+    {
+      "check": "Cohen's kappa",
+      "ok": true,
+      "detail": "0.8000"
+    },
+    {
+      "check": "XSTest file",
+      "ok": true,
+      "detail": "450 prompts: 250 SAFE, 200 UNSAFE, 18 types"
+    },
+    {
+      "check": "fixed audit ids are deterministic and balanced",
+      "ok": true,
+      "detail": "60 ids (30 SAFE / 30 UNSAFE)"
+    },
+    {
+      "check": "audit item construction",
+      "ok": true,
+      "detail": "all_policies=240 items, one_per_id=60 items"
+    },
+    {
+      "check": "contrast pairs",
+      "ok": true,
+      "detail": "200 pairs over 8 safe types (156 by focus word, 44 by position)"
+    },
+    {
+      "check": "keyword refusal heuristic",
+      "ok": true,
+      "detail": "[True, False]"
+    },
+    {
+      "check": "dpo policy is the finished standard run",
+      "ok": true,
+      "detail": "/content/drive/MyDrive/ATML_PA2/task1_dpo/outputs/standard OK {'run_name': 'standard', 'beta': 0.1, 'epochs': 1, 'data_file': 'data/dpo_standard_train.jsonl', 'rows_selected': 1500, 'rows_in_file': 1500, 'updates': None, 'loss_type': None, 'clip_epsilon': None, 'kl_beta': None}"
+    },
+    {
+      "check": "ppo policy is the finished standard run",
+      "ok": true,
+      "detail": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/standard OK {'run_name': 'standard', 'beta': None, 'epochs': None, 'data_file': None, 'rows_selected': None, 'rows_in_file': None, 'updates': 20, 'loss_type': None, 'clip_epsilon': 0.2, 'kl_beta': 0.1}"
+    },
+    {
+      "check": "grpo policy is the finished standard run",
+      "ok": true,
+      "detail": "/content/drive/MyDrive/ATML_PA2/task3_grpo/outputs/standard OK {'run_name': 'standard', 'beta': None, 'epochs': None, 'data_file': None, 'rows_selected': None, 'rows_in_file': None, 'updates': 20, 'loss_type': 'grpo', 'clip_epsilon': 0.2, 'kl_beta': 0.1}"
+    }
+  ],
+  "policies": {
+    "dpo": {
+      "policy": "dpo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task1_dpo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "14a4a5e7fd203dd8",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": 0.1,
+        "epochs": 1,
+        "data_file": "data/dpo_standard_train.jsonl",
+        "rows_selected": 1500,
+        "rows_in_file": 1500,
+        "updates": null,
+        "loss_type": null,
+        "clip_epsilon": null,
+        "kl_beta": null
+      }
+    },
+    "ppo": {
+      "policy": "ppo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "0f78ce4c1bc10d6f",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": null,
+        "epochs": null,
+        "data_file": null,
+        "rows_selected": null,
+        "rows_in_file": null,
+        "updates": 20,
+        "loss_type": null,
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1
+      }
+    },
+    "grpo": {
+      "policy": "grpo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task3_grpo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "a9869ef7cade003b",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": null,
+        "epochs": null,
+        "data_file": null,
+        "rows_selected": null,
+        "rows_in_file": null,
+        "updates": 20,
+        "loss_type": "grpo",
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1
+      }
+    }
+  }
+}

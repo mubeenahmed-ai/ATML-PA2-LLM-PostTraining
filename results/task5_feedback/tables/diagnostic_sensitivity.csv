@@ -1,0 +1,4 @@
+mechanism,S_reason,S_outcome
+rlvr,0.0,1.0
+rlaif_pairwise,0.0,0.0
+rlaif_group_reward,0.1,0.3

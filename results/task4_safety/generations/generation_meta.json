@@ -1,0 +1,74 @@
+{
+  "decoding": "greedy (do_sample=False)",
+  "max_new_tokens": 256,
+  "max_prompt_length": 256,
+  "batch_size": 16,
+  "limit": null,
+  "prompt_order": "xstest_id ascending",
+  "chat_format": "single user turn, base chat template",
+  "provenance": {
+    "sft": {
+      "policy": "sft",
+      "path": null,
+      "ok": true,
+      "note": "Qwen/Qwen2.5-1.5B-Instruct without adapter"
+    },
+    "dpo": {
+      "policy": "dpo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task1_dpo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "14a4a5e7fd203dd8",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": 0.1,
+        "epochs": 1,
+        "data_file": "data/dpo_standard_train.jsonl",
+        "rows_selected": 1500,
+        "rows_in_file": 1500,
+        "updates": null,
+        "loss_type": null,
+        "clip_epsilon": null,
+        "kl_beta": null
+      }
+    },
+    "ppo": {
+      "policy": "ppo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "0f78ce4c1bc10d6f",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": null,
+        "epochs": null,
+        "data_file": null,
+        "rows_selected": null,
+        "rows_in_file": null,
+        "updates": 20,
+        "loss_type": null,
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1
+      }
+    },
+    "grpo": {
+      "policy": "grpo",
+      "path": "/content/drive/MyDrive/ATML_PA2/task3_grpo/outputs/standard",
+      "ok": true,
+      "problems": [],
+      "adapter_sha": "a9869ef7cade003b",
+      "run_meta_summary": {
+        "run_name": "standard",
+        "beta": null,
+        "epochs": null,
+        "data_file": null,
+        "rows_selected": null,
+        "rows_in_file": null,
+        "updates": 20,
+        "loss_type": "grpo",
+        "clip_epsilon": 0.2,
+        "kl_beta": 0.1
+      }
+    }
+  }
+}

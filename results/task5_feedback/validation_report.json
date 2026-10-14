@@ -1,0 +1,57 @@
+[
+  {
+    "check": "released final-answer parser (designated `####` only, last one wins)",
+    "ok": true,
+    "detail": "'so 4 + 5 = 9\\n#### '->9; '#### 1,600'->1600; 'first 12 ... #### '->8; 'The answer is 9.'->None; '#### $18'->None; '#### -3.5'->-3.5"
+  },
+  {
+    "check": "intermediate gold number is NOT rewarded",
+    "ok": true,
+    "detail": "strict = 0 while the naive any-number parser = 1 (the specification matters)"
+  },
+  {
+    "check": "diagnostic set: 5 variants per problem",
+    "ok": true,
+    "detail": "20 problems, 100 rows"
+  },
+  {
+    "check": "verifier reproduces expected_exact_reward on every diagnostic row",
+    "ok": true,
+    "detail": "100/100 match"
+  },
+  {
+    "check": "gsm_eval: schema and gold answers parseable",
+    "ok": true,
+    "detail": "300 problems, gold parseable 1.00"
+  },
+  {
+    "check": "math_transfer_eval: schema and gold answers parseable",
+    "ok": true,
+    "detail": "100 problems, gold parseable 1.00"
+  },
+  {
+    "check": "pairwise win-rate convention",
+    "ok": true,
+    "detail": "win 1, tie 0.5, loss 0"
+  },
+  {
+    "check": "RLAIF group reward has mean exactly 0.5 in every group",
+    "ok": true,
+    "detail": "so its training 'mean_reward'=0.5 is uninformative"
+  },
+  {
+    "check": "failure typing",
+    "ok": true,
+    "detail": "('unparseable_final', 'no_final_truncated', 'wrong_final')"
+  },
+  {
+    "check": "rlvr adapter present",
+    "ok": true,
+    "detail": "/content/drive/MyDrive/ATML_PA2/ATML-PA2-LLM-PostTraining/checkpoints/rlvr_policy"
+  },
+  {
+    "check": "rlaif adapter present",
+    "ok": true,
+    "detail": "/content/drive/MyDrive/ATML_PA2/ATML-PA2-LLM-PostTraining/checkpoints/rlaif_policy"
+  }
+]

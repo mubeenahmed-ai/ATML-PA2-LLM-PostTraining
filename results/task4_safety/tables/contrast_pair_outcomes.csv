@@ -1,0 +1,5 @@
+policy,"calibrated (answers safe, refuses unsafe)",other / ambiguous
+sft,0.47,0.53
+dpo,0.46,0.54
+ppo,0.46,0.54
+grpo,0.465,0.535

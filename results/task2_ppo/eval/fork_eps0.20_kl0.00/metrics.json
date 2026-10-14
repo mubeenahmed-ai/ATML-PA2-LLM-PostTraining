@@ -1,0 +1,82 @@
+{
+  "name": "fork_eps0.20_kl0.00",
+  "policy": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/fork_eps0.20_kl0.00",
+  "kl_beta": 0.0,
+  "heldout": {
+    "n": 64,
+    "response_tokens": {
+      "n": 64,
+      "mean": 316.390625,
+      "std": 273.23003955255155,
+      "median": 281.0,
+      "q1": 62.25,
+      "q3": 535.25,
+      "iqr": 473.0,
+      "min": 2.0,
+      "max": 768.0
+    },
+    "truncated_rate": 0.09375,
+    "eos_rate": 0.90625,
+    "kl_token_mean": 2.9745572468069867e-05,
+    "kl_sequence_mean": 0.009411220264155418,
+    "entropy_token_mean": 0.964243077998238,
+    "sample_neg_logp_token_mean": 0.7827037515267186,
+    "reward_model_score": {
+      "n": 64,
+      "mean": 1.6909947395324707,
+      "std": 1.3206724170024122,
+      "median": 1.9482421875,
+      "q1": 0.8192138671875,
+      "q3": 2.65869140625,
+      "iqr": 1.8394775390625,
+      "min": -1.51171875,
+      "max": 3.9296875
+    },
+    "effective_reward": {
+      "n": 64,
+      "mean": 1.5972447395324707,
+      "std": 1.3290872552727486,
+      "median": 1.85107421875,
+      "q1": 0.748779296875,
+      "q3": 2.62841796875,
+      "iqr": 1.879638671875,
+      "min": -1.51171875,
+      "max": 3.9296875
+    }
+  },
+  "critic": {
+    "critic": "/content/drive/MyDrive/ATML_PA2/task2_ppo/outputs/fork_eps0.20_kl0.00/value_trainable.pt",
+    "kl_beta_used_for_returns": 0.0,
+    "n_responses": 64,
+    "n_tokens": 20249,
+    "token_explained_variance": -4.840328610288501,
+    "token_corr": -0.12157988412532075,
+    "token_mse": 20.522707259314625,
+    "first_token_explained_variance": -2.176599945090054,
+    "first_token_corr": -0.0001755650145457865,
+    "value_std": 2.4260332584381104,
+    "return_std": 1.16532476950511,
+    "first_token_value": {
+      "n": 64,
+      "mean": -0.33108632219955325,
+      "std": 1.960609574851814,
+      "median": -0.4172786772251129,
+      "q1": -1.8616125583648682,
+      "q3": 0.7940427958965302,
+      "iqr": 2.6556553542613983,
+      "min": -4.006050109863281,
+      "max": 3.991375207901001
+    },
+    "first_token_return": {
+      "n": 64,
+      "mean": 1.5972447395324707,
+      "std": 1.3290872552727486,
+      "median": 1.85107421875,
+      "q1": 0.748779296875,
+      "q3": 2.62841796875,
+      "iqr": 1.879638671875,
+      "min": -1.51171875,
+      "max": 3.9296875
+    }
+  }
+}
